@@ -38,6 +38,8 @@ https://www.ibm.com/developerworks/analytics/library/iot-deep-learning-anomaly-d
 
 http://www.nytimes.com/2012/02/19/magazine/shopping-habits.html
 
+https://www.upwork.com/hiring/data/r-vs-java-vs-python-which-is-best/
+
 https://gss.civilservice.gov.uk/wp-content/uploads/2017/09/Data_Scientist_Integrated_Degree_Apprenticeship_Draft_Standard.pdf
 
 
