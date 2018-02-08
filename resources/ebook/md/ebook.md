@@ -6,6 +6,8 @@ Contents {#contents .TOCHeading}
 
 [Table of Contents 1](#table-of-contents)
 
+[Preface 8](#preface)
+
 [Modern AI Quotes 10](#modern-ai-quotes)
 
 [Introduction 11](#introduction)
@@ -478,92 +480,97 @@ and BiGRU Respectively)
 
 [Create DNNs Configuration: 141](#create-dnns-configuration)
 
-[Appendix D -- R vs Python for Data Science -- Raw (Needs tiding up and
-verification from Robin)
-142](#appendix-d-r-vs-python-for-data-science-raw-needs-tiding-up-and-verification-from-robin)
+[Appendix D -- R vs Python vs Java for Data Science
+142](#appendix-d-r-vs-python-vs-java-for-data-science)
 
-[The Case for R 145](#the-case-for-r)
+[R: BELOVED BY DATA SCIENTISTS 142](#r-beloved-by-data-scientists)
 
-[Illustrate differences through code samples
-147](#illustrate-differences-through-code-samples)
+[Java: Speed at scale 142](#java-speed-at-scale)
 
-[Importing a CSV 147](#importing-a-csv)
+[Python: Built for flexibility 142](#python-built-for-flexibility)
 
-[Finding the number of rows 147](#finding-the-number-of-rows)
+[Which Language Is Right for Your Data Needs?
+143](#which-language-is-right-for-your-data-needs)
 
-[Looking at the first row of the data
-148](#looking-at-the-first-row-of-the-data)
+[R 143](#r)
 
-[Find the average of each statistic
-148](#find-the-average-of-each-statistic)
+[JAVA 143](#java)
 
-[Make pairwise scatterplots 149](#make-pairwise-scatterplots)
+[PYTHON 144](#python)
 
-[Make clusters of the players 151](#make-clusters-of-the-players)
-
-[Plot players by cluster 152](#plot-players-by-cluster)
-
-[Split into training and testing sets
-154](#split-into-training-and-testing-sets)
-
-[Calculate summary statistics for the model
-155](#calculate-summary-statistics-for-the-model)
-
-[Fit a random forest model 156](#fit-a-random-forest-model)
-
-[Calculate error 156](#calculate-error)
-
-[Download a webpage 157](#download-a-webpage)
-
-[Extract player box scores 157](#extract-player-box-scores)
-
-[Python vs R in Conclusion 159](#python-vs-r-in-conclusion)
-
-[More comparison using another data set:
-161](#more-comparison-using-another-data-set)
-
-[Comparative analysis of genome data
-161](#comparative-analysis-of-genome-data)
+[Hiring a Data Scientist? 144](#hiring-a-data-scientist)
 
 [Appendix E -- Deep Learning Resouces (Python, Java, R) -- CNTK / DL4J
-186](#appendix-e-deep-learning-resouces-python-java-r-cntk-dl4j)
+145](#appendix-e-deep-learning-resources-python-java-r-cntk-dl4j)
 
 [Code Examples for Learning / Understanding
-186](#code-examples-for-learning-understanding)
+145](#code-examples-for-learning-understanding)
 
-[Labs 186](#labs)
+[Labs 145](#labs)
 
-[Industry Use Case Samples 186](#industry-use-case-samples)
+[Industry Use Case Samples 145](#industry-use-case-samples)
 
 [Appendix F -- Deep Learning Tooling Options
-187](#appendix-f-deep-learning-tooling-options)
+146](#appendix-f-deep-learning-tooling-options)
 
 [Appendix G -- AI Wikipedia Resources
-191](#appendix-g-ai-wikipedia-resources)
+150](#appendix-g-ai-wikipedia-resources)
 
-[Theory 191](#theory)
+[Theory 150](#theory)
 
-[Problems 191](#problems)
+[Problems 150](#problems)
 
-[Supervised Learning 191](#supervised-learning-1)
+[Supervised Learning 150](#supervised-learning-1)
 
-[Clustering 191](#clustering-2)
+[Clustering 150](#clustering-2)
 
-[Dimensionality Reduction 191](#dimensionality-reduction)
+[Dimensionality Reduction 150](#dimensionality-reduction)
 
-[Structured Prediction 191](#structured-prediction)
+[Structured Prediction 150](#structured-prediction)
 
-[Anomaly Detection 191](#anomaly-detection-1)
+[Anomaly Detection 150](#anomaly-detection-1)
 
-[Artificial Neural Networks 191](#artificial-neural-networks)
+[Artificial Neural Networks 150](#artificial-neural-networks)
 
-[Reinforcement Learning 191](#reinforcement-learning-2)
+[Reinforcement Learning 150](#reinforcement-learning-2)
 
-[Machine Learning Venues 191](#machine-learning-venues)
+[Machine Learning Venues 150](#machine-learning-venues)
 
-[Related Articles 191](#related-articles)
+[Related Articles 150](#related-articles)
 
-[References 192](#references)
+[References 151](#references)
+
+Preface
+=======
+
+This book is compiled for anyone with keen interest, people who want to
+cover the necessary theory and want to learn the Artificial
+Intelligence, Data Science and Deep Learning Technology Jargons and want
+to understand the basics of the workload vertical.
+
+The book however is arranged into gradual upskilling for the concepts,
+Beginner, Intermediate and Advance and finishes at references and
+citations.
+
+The minimum coding is used in the book on purpose to make it readable
+and consumable for larger audience, however there is a GitHub
+(<https://meetnavpk.github.io>) hosted site where all the examples will
+be loaded in same format Beginner to Advance for various implementation
+libraries, CNTK, Eclipse Deeplearning4J and Tensorflow with
+implementation languages Java, Python and R. The examples are well
+documented themselves with How To guides to make them consume at your
+own pace and are / will be kept well up to date.
+
+The aim is to keep the volume of the book no more than 150 pages and
+open source and regularly updated with field changes via adoptions.
+
+Division of chapters are as following:
+
+-   Chapter 1 -- 3 are for Beginners
+
+-   Chapter 4 -- 5 are for Intermediate
+
+-   Chapter 6 and Appendix for Experts
 
 Modern AI Quotes
 ================
@@ -757,7 +764,7 @@ deeper insights, make predictions, or generate recommendations.
 
 ### Analytics Type Comparison
 
-#### ![](./ebook-media/media/image1.png){width="3.9659722222222222in" height="3.089583333333333in"}Descriptive Analytics
+#### ![](.//media/image1.png){width="3.9659722222222222in" height="3.089583333333333in"}Descriptive Analytics
 
 ***Business Intelligence and Data Mining***
 
@@ -828,8 +835,8 @@ including:
 
 -   Domain-specific knowledge and approaches
 
-![](./ebook-media/media/image2.png){width="2.870833333333333in"
-height="2.370833333333333in"}![](./ebook-media/media/image3.png){width="2.5166666666666666in"
+![](.//media/image2.png){width="2.870833333333333in"
+height="2.370833333333333in"}![](.//media/image3.png){width="2.5166666666666666in"
 height="2.3986111111111112in"}There are tons of blogs, articles,
 diagrams, and other information channels that aim to define this new and
 still-fuzzy term 'Data Science,' and it will still be some years before
@@ -896,18 +903,18 @@ This, in turn, gave rise to cloud computing and concurrent techniques
 such as **map-reduce,** which distributed the analysis process across
 many processors, taking advantage of the power of parallel processing.
 
-![](./ebook-media/media/image4.png){width="6.45in"
-height="2.908333333333333in"}The process of analysing big data is not
-simple and evolves to the specialization of developers who were known as
-**data scientists**. Drawing upon a myriad of technologies and
-expertise, they can analyse data to solve problems that previously were
-either not envisioned or were too difficult to solve.
+![](.//media/image4.png){width="6.45in" height="2.908333333333333in"}The
+process of analysing big data is not simple and evolves to the
+specialization of developers who were known as **data scientists**.
+Drawing upon a myriad of technologies and expertise, they can analyse
+data to solve problems that previously were either not envisioned or
+were too difficult to solve.
 
 \"Silicon Valley technology companies are hiring data scientists to help
 them glean insights from the terabytes of data that they collect every
 day\".
 
-![](./ebook-media/media/image5.png){width="5.3375in"
+![](.//media/image5.png){width="5.3375in"
 height="4.329861111111111in"}Data scientists use their data and
 analytical ability to find and interpret rich data sources; manage large
 amounts of data despite hardware, software, and bandwidth constraints;
@@ -1075,7 +1082,7 @@ CRISP-DM. It's a great process involving many phases you'll recognize
 from Business Intelligence frameworks. The methodology itself was
 conceived in 1996.
 
-![](./ebook-media/media/image7.png){width="2.8229166666666665in"
+![](.//media/image7.png){width="2.8229166666666665in"
 height="3.0802810586176728in"}\"CRISP-DM remains the most popular
 methodology for analytics, data mining, and data science projects, with
 43% share in latest KDnuggets Poll, but a replacement for unmaintained
@@ -1099,7 +1106,7 @@ process to make enterprise DS teams more efficient. It handles the same
 kind of work as the CRISP-DM but adds in other phases and fleshes out
 the team aspect of the process.
 
-![Image](./ebook-media/media/image8.png){width="5.788321303587051in"
+![Image](.//media/image8.png){width="5.788321303587051in"
 height="3.2953029308836395in"}
 
 It's an **open source** agile, iterative, data science methodology to
@@ -1206,7 +1213,7 @@ But while those three steps provide a high-level overview of what data
 scientists do daily, there's still a lot of mystery when it comes to the
 details of the process.
 
-![](./ebook-media/media/image9.png){width="3.635676946631671in"
+![](.//media/image9.png){width="3.635676946631671in"
 height="1.5222222222222221in"}
 
 The data science process is a recursive one; arriving at the end will
@@ -1748,12 +1755,12 @@ algorithms.
 Relationship between AI, ML & DL
 --------------------------------
 
-![](./ebook-media/media/image10.png){width="3.3291666666666666in"
+![](.//media/image10.png){width="3.3291666666666666in"
 height="2.925in"}***The field of AI is broad and has been around for a
 long time. Deep learning is a subset of the field of machine learning,
 which is a subfield of AI***
 
-![](./ebook-media/media/image11.png){width="2.6958333333333333in"
+![](.//media/image11.png){width="2.6958333333333333in"
 height="1.9708333333333334in"}You can think of deep learning, machine
 learning and artificial intelligence as a set of Russian dolls nested
 within each other, beginning with the smallest and working out. Deep
@@ -1785,8 +1792,8 @@ which player -- A or B -- is a computer and which is a human. The
 interrogator is limited to using the responses to written questions to
 make the determination.
 
-![](./ebook-media/media/image12.png){width="2.754166666666667in" height="2.0993055555555555in"}![](./ebook-media/media/image13.png){width="2.8097222222222222in" height="2.0506944444444444in"}History of AI, ML, DL & CC
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![](.//media/image12.png){width="2.754166666666667in" height="2.0993055555555555in"}![](.//media/image13.png){width="2.8097222222222222in" height="2.0506944444444444in"}History of AI, ML, DL & CC
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### History of AI
 
@@ -1805,7 +1812,7 @@ layers with new topologies and learning methods. This evolution of
 neural networks has successfully solved complex problems in various
 domains.
 
-![](./ebook-media/media/image14.png){width="6.692361111111111in"
+![](.//media/image14.png){width="6.692361111111111in"
 height="1.2958333333333334in"}In the past decade, cognitive computing
 has emerged, the goal of which is to build systems that can learn and
 naturally interact with humans. Cognitive computing was demonstrated by
@@ -1816,7 +1823,7 @@ Jeopardy.
 
 #### AI as a Search
 
-![](./ebook-media/media/image15.png){width="6.692361111111111in"
+![](.//media/image15.png){width="6.692361111111111in"
 height="1.336111111111111in"}Most AI can be solved through
 ***brute-force*** search (***depth-first or breadth-first*** search).
 However, basic search quickly suffers considering the search space for
@@ -1841,7 +1848,7 @@ the downside of search.
 
 #### Perceptrons
 
-![](./ebook-media/media/image16.png){width="3.0479166666666666in"
+![](.//media/image16.png){width="3.0479166666666666in"
 height="1.2520833333333334in"}The Perceptron was an early supervised
 learning algorithm for single-layer neural networks. Given an input
 feature vector, the perceptron algorithm could learn to classify inputs
@@ -1858,7 +1865,7 @@ algorithms, network topologies, and deep learning.
 
 #### Clustering algorithms
 
-![](./ebook-media/media/image17.png){width="2.963888888888889in"
+![](.//media/image17.png){width="2.963888888888889in"
 height="1.5166666666666666in"}With Perceptrons, the approach was
 supervised. Users provided data to train the network, and then test the
 network against new data. Clustering algorithms take a different
@@ -1891,7 +1898,7 @@ from decision tree learning algorithms, where the data set is split into
 subsets based on attribute value tests (through a process called
 recursive partitioning).
 
-![](./ebook-media/media/image18.png){width="5.677777777777778in"
+![](.//media/image18.png){width="5.677777777777778in"
 height="1.5520833333333333in"}Consider the example in the following
 figure. In this data set, we can observe when someone was productive
 based on three factors. Using a decision tree learning algorithm, we can
@@ -1916,7 +1923,7 @@ developed in 1965, but it wasn\'t until the 1970s that these so-called
 stores both knowledge and rules and uses a reasoning system to draw
 conclusions.
 
-![](./ebook-media/media/image19.png){width="3.65625in"
+![](.//media/image19.png){width="3.65625in"
 height="1.9972222222222222in"}A rules-based system typically consists of
 a rule set, a knowledge base, an inference engine (using forward or
 backward rule chaining), and a user interface. In the following figure,
@@ -1930,7 +1937,7 @@ still in operation today.
 
 #### History of Machine Learning
 
-![](./ebook-media/media/image20.png){width="6.692361111111111in"
+![](.//media/image20.png){width="6.692361111111111in"
 height="1.475in"}Machine learning is a subfield of AI and computer
 science that has its roots in statistics and mathematical optimization.
 Machine learning covers techniques in supervised and unsupervised
@@ -1940,7 +1947,7 @@ of the algorithms that have led to this surprisingly effective approach.
 
 #### Back-propagation
 
-![](./ebook-media/media/image21.png){width="2.442361111111111in"
+![](.//media/image21.png){width="2.442361111111111in"
 height="1.8854166666666667in"}The true power of neural networks is their
 multilayer variant. Training single-layer Perceptrons is
 straightforward, but the resulting network is not very powerful. The
@@ -1983,7 +1990,7 @@ output layer of this network is a set of nodes that identify features of
 the image (in this case, a node per identified number). Users can train
 the network through back-propagation.
 
-![](./ebook-media/media/image22.png){width="5.329861111111111in"
+![](.//media/image22.png){width="5.329861111111111in"
 height="1.2284722222222222in"}The use of deep layers of processing,
 convolutions, pooling, and a fully connected classification layer opened
 the door to various new applications of neural networks. In addition to
@@ -2018,7 +2025,7 @@ algorithm, commonly back-propagation-through-time (a variant of
 back-propagation.), optimizes these weights based on the resulting
 error.
 
-![](./ebook-media/media/image23.png){width="4.419444444444444in"
+![](.//media/image23.png){width="4.419444444444444in"
 height="2.1951388888888888in"}The LSTM has been applied to speech
 recognition, handwriting recognition, text-to-speech synthesis, image
 captioning, and various other tasks.
@@ -2032,7 +2039,7 @@ with unsupervised learning. These networks are so deep that new methods
 of computation, such as GPUs, are required to build them (in addition to
 clusters of compute nodes).
 
-![](./ebook-media/media/image24.png){width="6.316666666666666in"
+![](.//media/image24.png){width="6.316666666666666in"
 height="1.1159722222222221in"}This article has explored two deep
 learning algorithms so far: CNNs and LSTMs. These algorithms have been
 combined to achieve several surprisingly intelligent tasks. As shown in
@@ -2125,9 +2132,9 @@ principles underlying machine learning are quite distinct:
     for performing complex tasks, such as ontology, expert systems, and
     semantic webs, do not qualify as machine learning.
 
-### ![](./ebook-media/media/image25.png){width="7.708333333333333in" height="4.275in"}Practices of AI
+### ![](.//media/image25.png){width="7.708333333333333in" height="4.275in"}Practices of AI
 
-#### ![](./ebook-media/media/image26.png){width="7.14375in" height="3.0375in"}Hierarchy of Artificial Intelligence
+#### ![](.//media/image26.png){width="7.14375in" height="3.0375in"}Hierarchy of Artificial Intelligence
 
 #### Problem Space Selection Criteria
 
@@ -2142,12 +2149,12 @@ principles underlying machine learning are quite distinct:
 
 ***ML Type Selection Criteria***
 
-![](./ebook-media/media/image27.png){width="5.7839555993000875in"
+![](.//media/image27.png){width="5.7839555993000875in"
 height="2.9069444444444446in"}
 
 ***What type of Problem my domain is?***
 
-![](./ebook-media/media/image28.png){width="6.191259842519685in"
+![](.//media/image28.png){width="6.191259842519685in"
 height="3.171527777777778in"}***Walking Skeleton for Algorithms***
 
 #### Supervised Learning
@@ -2186,15 +2193,15 @@ the algorithm iteratively makes predictions on the training data and is
 corrected by the teacher. Learning stops when the algorithm achieves an
 acceptable level of performance.
 
-![](./ebook-media/media/image29.png){width="6.6930555555555555in"
+![](.//media/image29.png){width="6.6930555555555555in"
 height="2.561111111111111in"}
 
-![](./ebook-media/media/image30.png){width="6.6930555555555555in"
+![](.//media/image30.png){width="6.6930555555555555in"
 height="2.9819444444444443in"}***Training Model***
 
 ***Testing Model***
 
-![](./ebook-media/media/image31.png){width="6.6930555555555555in"
+![](.//media/image31.png){width="6.6930555555555555in"
 height="3.027083333333333in"}
 
 ***Updating Model***
@@ -2313,13 +2320,13 @@ predictions for the unlabelled data, feed that data back into the
 supervised learning algorithm as training data and use the model to make
 predictions on new unseen data.
 
-#### ![](./ebook-media/media/image32.png){width="6.692913385826771in" height="2.8645669291338582in"}Anomaly Detection
+#### ![](.//media/image32.png){width="6.692913385826771in" height="2.8645669291338582in"}Anomaly Detection
 
 ***The process of identifying rare or unexpected items or events in a
 dataset that do not conform to other items in the dataset***
 
-![](./ebook-media/media/image33.png){width="3.1631944444444446in"
-height="2.1486111111111112in"}![](./ebook-media/media/image34.png){width="2.6216535433070867in"
+![](.//media/image33.png){width="3.1631944444444446in"
+height="2.1486111111111112in"}![](.//media/image34.png){width="2.6216535433070867in"
 height="1.9555107174103237in"}In data mining, anomaly detection (also
 outlier detection) is the identification of items, events or
 observations which do not conform to an expected pattern or other items
@@ -2431,7 +2438,7 @@ coin, he wins points. An agent sends output in the form of actions to
 the environment, and the environment returns the agent's new state as
 well as rewards.
 
-![](./ebook-media/media/image35.png){width="3.3200787401574803in"
+![](.//media/image35.png){width="3.3200787401574803in"
 height="1.339763779527559in"}In the feedback loop above, the subscripts
 denote time steps t and t+1, each of which refers to different states:
 the state at moment t, and the state at moment t+1. Unlike other forms
@@ -2531,7 +2538,7 @@ recognize an agent's state; e.g. the screen that Mario is on, or the
 terrain before a drone. That is, they perform their typical task of
 image recognition.
 
-![](./ebook-media/media/image36.png){width="2.64251968503937in"
+![](.//media/image36.png){width="2.64251968503937in"
 height="1.633857174103237in"}But convolutional networks derive different
 interpretations from images in reinforcement learning than in supervised
 learning. In supervised learning, the network applies a label to an
@@ -2547,7 +2554,7 @@ convolutional net can rank the actions possible to perform in that
 state; for example, it might predict that running right will return 5
 points, jumping 7, and running left none.
 
-![](./ebook-media/media/image37.png){width="3.0507874015748033in"
+![](.//media/image37.png){width="3.0507874015748033in"
 height="1.7307086614173228in"}Having assigned values to the expected
 rewards, the Q function simply selects the state-action pair with the
 highest so-called Q value.
@@ -2666,7 +2673,7 @@ not tell you the cause but relationship.
 -   There is a relationship between having a lot of money and having a
     costlier house
 
-![](./ebook-media/media/image38.png){width="4.129133858267717in"
+![](.//media/image38.png){width="4.129133858267717in"
 height="2.703542213473316in"}It is the most popular statistic technique
 for data analysis to date.
 
@@ -2693,7 +2700,7 @@ response based on one or more predictor (or independent) variables
 (features). It allows one to say that the presence of a risk factor
 increases the odds of a given outcome by a specific factor.
 
-###### ![](./ebook-media/media/image39.png){width="4.451574803149606in" height="3.05in"}Polynomial Regression
+###### ![](.//media/image39.png){width="4.451574803149606in" height="3.05in"}Polynomial Regression
 
 **Used to describe non-linear phenomena, e.g. Progression of an
 epidemic, it fits a higher order degree curve to fit your plotted data
@@ -2718,7 +2725,7 @@ The predictors resulting from the polynomial expansion of the
 \"baseline\" predictors are known as interactive features. Such
 predictors/features are also used in classification settings.
 
-#### ![](./ebook-media/media/image40.png){width="3.255511811023622in" height="2.011809930008749in"}Classification
+#### ![](.//media/image40.png){width="3.255511811023622in" height="2.011809930008749in"}Classification
 
 ***Classification is a general process related to categorization, the
 process in which ideas and objects are recognized, differentiated and
@@ -2741,13 +2748,13 @@ systems are usually used when predictions are of a discrete, or "yes or
 no" nature. Example: Mapping a picture of someone to a male or female
 classification.
 
-##### ![](./ebook-media/media/image41.png){width="1.3200787401574803in" height="1.3200787401574803in"}Types of Classification
+##### ![](.//media/image41.png){width="1.3200787401574803in" height="1.3200787401574803in"}Types of Classification
 
 -   Binary-class
 
 -   Multiclass
 
--   ![](./ebook-media/media/image42.png){width="5.1097222222222225in"
+-   ![](.//media/image42.png){width="5.1097222222222225in"
     height="2.359722222222222in"}All vs One
 
 #### Clustering
@@ -2778,7 +2785,7 @@ graphics.
 
 ###### Centroid-based Clustering
 
-![](./ebook-media/media/image43.png){width="3.4791666666666665in"
+![](.//media/image43.png){width="3.4791666666666665in"
 height="2.1458333333333335in"}In centroid-based clustering, clusters are
 represented by a central vector, which may not necessarily be a member
 of the data set. When the number of clusters is fixed to k, k-means
@@ -2802,7 +2809,7 @@ In a dendrogram, the y-axis marks the distance at which the clusters
 merge, while the objects are placed along the x-axis such that the
 clusters don\'t mix.
 
-###### ![](./ebook-media/media/image44.png){width="2.680708661417323in" height="2.069291338582677in"}Distribution-based clustering
+###### ![](.//media/image44.png){width="2.680708661417323in" height="2.069291338582677in"}Distribution-based clustering
 
 The clustering model most closely related to statistics is based on
 distribution models. Clusters can then easily be defined as objects
@@ -2810,14 +2817,14 @@ belonging most likely to the same distribution. A convenient property of
 this approach is that this closely resembles the way artificial data
 sets are generated: by sampling random objects from a distribution.
 
-#### ![](./ebook-media/media/image45.png){width="3.4220472440944882in" height="2.1673228346456694in"}Density-based clustering (DBSCAN)
+#### ![](.//media/image45.png){width="3.4220472440944882in" height="2.1673228346456694in"}Density-based clustering (DBSCAN)
 
 In density-based clustering, clusters are defined as areas of higher
 density than the remainder of the dataset. Objects in these sparse areas
 -- that are required to separate clusters -- are usually considered to
 be noise and border points.
 
-![](./ebook-media/media/image32.png){width="4.894488188976378in"
+![](.//media/image32.png){width="4.894488188976378in"
 height="2.0952744969378827in"}
 
 Chapter 04 -- Theory of Data
@@ -3006,7 +3013,7 @@ learning algorithms or techniques.
     measurements. So, for example, ten metres is twice the distance of 5
     metres.
 
-### ![](./ebook-media/media/image46.png){width="6.6930555555555555in" height="2.4625in"}Types of Variables
+### ![](.//media/image46.png){width="6.6930555555555555in" height="2.4625in"}Types of Variables
 
 All experiments examine variable(s). A variable is not only something
 that we measure but also something that we can manipulate and something
@@ -3171,7 +3178,7 @@ Let's now study each stage in detail:
 First, identify Predictor (Input) and Target (output) variables. Next,
 identify the data type and category of the variables.
 
-> ![](./ebook-media/media/image47.png){width="5.768055555555556in"
+> ![](.//media/image47.png){width="5.768055555555556in"
 > height="1.2854166666666667in"}Let's understand this step more clearly
 > by taking an example.
 >
@@ -3183,14 +3190,14 @@ identify the data type and category of the variables.
 
 #### Univariate Analysis
 
-![](./ebook-media/media/image48.png){width="4.173611111111111in"
+![](.//media/image48.png){width="4.173611111111111in"
 height="2.4833333333333334in"}At this stage, we explore variables one by
 one. Method to perform univariate analysis will depend on whether the
 variable type is categorical or continuous. Let's look at these methods
 and statistical measures for categorical and continuous variables
 individually:
 
--   ![](./ebook-media/media/image49.png){width="5.992518591426072in"
+-   ![](.//media/image49.png){width="5.992518591426072in"
     height="1.0681102362204724in"}**Continuous Variables** In case of
     continuous variables, we need to understand the central tendency and
     spread of the variable. These are measured using various statistical
@@ -3224,7 +3231,7 @@ Let's understand the possible combinations in detail:
     The pattern of scatter plot indicates the relationship between
     variables. The relationship can be linear or non-linear.
 
-> ![](./ebook-media/media/image50.png){width="3.1055555555555556in"
+> ![](.//media/image50.png){width="3.1055555555555556in"
 > height="2.672222222222222in"}Scatter plot shows the relationship
 > between two variables but does not indicates the strength of
 > relationship amongst them. To find the strength of the relationship,
@@ -3245,7 +3252,7 @@ Let's understand the possible combinations in detail:
 > identify the correlation. These function returns Pearson Correlation
 > value to identify the relationship between two variables:
 >
-> ![](./ebook-media/media/image51.png){width="4.751968503937008in"
+> ![](.//media/image51.png){width="4.751968503937008in"
 > height="1.2889763779527559in"}In above example, we have a good
 > positive relationship(0.65) between two variables X and Y.
 
@@ -3262,7 +3269,7 @@ Let's understand the possible combinations in detail:
 -   **Stacked Column Chart** This method is more of a visual form of a
     Two-way table.
 
--   ![](./ebook-media/media/image52.gif){width="6.266666666666667in"
+-   ![](.//media/image52.gif){width="6.266666666666667in"
     height="1.11875in"}**Chi-Square Test** This test is used to derive
     the statistical significance of the relationship between the
     variables. Also, it tests whether the evidence in the sample is
@@ -3283,12 +3290,12 @@ Let's understand the possible combinations in detail:
         chi-square test statistic for a test of independence of two
         categorical variables is found by:
 
-    -   ![](./ebook-media/media/image53.png){width="1.1625984251968504in"
+    -   ![](.//media/image53.png){width="1.1625984251968504in"
         height="0.24251968503937008in"}where *O* represents the observed
         frequency. *E* is the expected frequency under the null
         hypothesis and computed by:
 
-> ![](./ebook-media/media/image54.png){width="1.5846445756780403in"
+> ![](.//media/image54.png){width="1.5846445756780403in"
 > height="0.3110236220472441in"}From the previous two-way table, the
 > expected count for product category 1 to be of small size is 0.22. It
 > is derived by taking the row total for Size (9) times the column total
@@ -3313,7 +3320,7 @@ Let's understand the possible combinations in detail:
 -   **Z-Test/ T-Test** Either test assesses whether the mean of two
     groups is statistically different from each other or not.
 
-> ![](./ebook-media/media/image55.jpeg){width="1.2901574803149607in"
+> ![](.//media/image55.jpeg){width="1.2901574803149607in"
 > height="1.0590551181102361in"}If the probability of Z is small, then
 > the difference between two averages is more significant. The T-test is
 > very similar to Z-test, but it is used when many observations for both
@@ -3369,7 +3376,7 @@ the dataset, then leaving out the few samples with missing features may
 be the best strategy in order not to bias the analysis, however leaving
 out available datapoints deprives the data of some amount of information
 and depending on the situation you face, you may
-![](./ebook-media/media/image56.png){width="3.620833333333333in"
+![](.//media/image56.png){width="3.620833333333333in"
 height="1.5652777777777778in"}want to look for other fixes before wiping
 out potentially useful datapoints from your dataset.
 
@@ -3421,7 +3428,7 @@ model or can lead to a biased model because we have not analysed the
 behaviour and relationship with other variables correctly. It can lead
 to wrong prediction or classification.
 
-![](./ebook-media/media/image57.png){width="4.738976377952756in"
+![](.//media/image57.png){width="4.738976377952756in"
 height="1.9019685039370078in"}Notice the missing values in the image
 shown above: In the left scenario, we have not treated missing values.
 The inference from this dataset is that the chances of playing cricket
@@ -3487,7 +3494,7 @@ values. They may occur at two stages:
     disadvantages of this method, it uses different sample size for
     different variables.
 
-    ![](./ebook-media/media/image58.png){width="2.9901574803149606in"
+    ![](.//media/image58.png){width="2.9901574803149606in"
     height="1.4137795275590552in"}Deletion methods are used when the
     nature of missing data is "Missing completely at random" else
     non-random missing values can bias the model output.
@@ -3622,7 +3629,7 @@ scientists as it needs close attention else it can result in wildly
 wrong estimations. Simply speaking, Outlier is an observation that
 appears far away and diverges from an overall pattern in a sample.
 
-![](./ebook-media/media/image59.png){width="2.4811023622047244in"
+![](.//media/image59.png){width="2.4811023622047244in"
 height="1.69251968503937in"}Let's take an example, we do customer
 profiling and find out that the average annual income of customers is
 \$0.8 million. But, there are two customers having an annual income of
@@ -3644,7 +3651,7 @@ do not have any outlier (above and below 1.5\*IQR, most common method).
 Now, look at the scatter plot. Here, we have two values below and one
 above the average in a specific segment of weight and height.
 
-#### ![](./ebook-media/media/image60.png){width="4.858267716535433in" height="1.2334645669291338in"}What causes Outliers?
+#### ![](.//media/image60.png){width="4.858267716535433in" height="1.2334645669291338in"}What causes Outliers?
 
 Whenever we come across outliers, the ideal way to tackle them is to
 find out the reason for having these outliers. The method to deal with
@@ -3723,8 +3730,7 @@ outliers in the dataset:
 To understand the impact deeply, let's take an example to check what
 happens to a data set with and without outliers in the data set.
 
-> ![](./ebook-media/media/image61.png){width="3.2625in"
-> height="1.7in"}**Example**
+> ![](.//media/image61.png){width="3.2625in" height="1.7in"}**Example**
 
 As you can see, a dataset with outliers has significantly different mean
 and standard deviation. In the first scenario, we will say that average
@@ -3773,7 +3779,7 @@ outliers:
     very small in numbers. We can also use trimming at both ends to
     remove outliers.
 
--   ![](./ebook-media/media/image62.png){width="4.070833333333334in"
+-   ![](.//media/image62.png){width="4.070833333333334in"
     height="1.2041666666666666in"}**Transforming and binning values**
     Transforming variables can also eliminate outliers. Natural log of a
     value reduces the variation caused by extreme values. Binning is
@@ -3862,7 +3868,7 @@ continuous variables. These transformations also improve the prediction.
 Log transformation is one of the commonly used transformation technique
 used in these situations.
 
-![](./ebook-media/media/image63.png){width="4.814566929133858in"
+![](.//media/image63.png){width="4.814566929133858in"
 height="1.2318897637795276in"}Symmetric distribution is preferred over
 skewed distribution as it is easier to interpret and generate
 inferences. Some modelling techniques require a normal distribution of
@@ -3871,7 +3877,7 @@ transformations which reduce skewness. For right-skewed distribution, we
 take square/cube root or logarithm of variable and for left skewed, we
 take square/cube or exponential of variables.
 
-![](./ebook-media/media/image62.png){width="4.070866141732283in"
+![](.//media/image62.png){width="4.070866141732283in"
 height="1.2043307086614172in"}Variable Transformation is also done from
 an implementation point of view (Human involvement). Let's understand it
 more clearly. In one of my project on employee performance, I found that
@@ -3918,7 +3924,7 @@ variables like a day, month, year, week, weekday that may have a better
 relationship with target variable. This step is used to highlight the
 hidden relationship in a variable:
 
-![](./ebook-media/media/image64.png){width="2.9366141732283464in"
+![](.//media/image64.png){width="2.9366141732283464in"
 height="1.110236220472441in"}There are various techniques to create new
 features. Let's look at the some of the commonly used methods:
 
@@ -3934,7 +3940,7 @@ features. Let's look at the some of the commonly used methods:
     binning variables and other methods of variable transformation can
     also be used to create new variables.
 
--   ![](./ebook-media/media/image65.png){width="2.453472222222222in"
+-   ![](.//media/image65.png){width="2.453472222222222in"
     height="1.4097222222222223in"}**Creating dummy variables** One of
     the most common applications of the dummy variable is to convert a
     categorical variable into numerical variables. Dummy variables are
@@ -4097,7 +4103,7 @@ cross-validation. In general, you should prefer doing k-fold
 cross-validation because it also gives you the spread of performance,
 and you may use it in for model selection as well.
 
-![](./ebook-media/media/image66.png){width="4.129166666666666in"
+![](.//media/image66.png){width="4.129166666666666in"
 height="2.7041666666666666in"}The following diagram illustrates the
 process:
 
@@ -4532,8 +4538,8 @@ of classification.
 
 Here's a diagram of what one node might look like.
 
-![](./ebook-media/media/image67.png){width="2.828472222222222in"
-height="1.2895833333333333in"}![](./ebook-media/media/image68.png){width="3.4519674103237095in"
+![](.//media/image67.png){width="2.828472222222222in"
+height="1.2895833333333333in"}![](.//media/image68.png){width="3.4519674103237095in"
 height="1.6755905511811024in"}A node layer is a row of those neuron-like
 switches that turn on or off as the input is fed through the net. Each
 layer's output is simultaneously the subsequent layer's input, starting
@@ -4556,7 +4562,7 @@ More than three layers (including input and output) qualifies as "deep"
 learning. So deep is a strictly defined, technical term that means more
 than one hidden layer.
 
-![](./ebook-media/media/image69.png){width="4.794444444444444in"
+![](.//media/image69.png){width="4.794444444444444in"
 height="2.8069444444444445in"}In deep-learning networks, each layer of
 nodes trains on a distinct set of features based on the previous layer's
 output. The further you advance into the neural net, the more complex
@@ -4777,7 +4783,7 @@ over several layers, so we use the chain rule of calculus to march back
 through the networks activations and outputs and finally arrive at the
 weight in question, and its relationship to overall error.
 
-![](./ebook-media/media/image70.png){width="1.6375in"
+![](.//media/image70.png){width="1.6375in"
 height="0.4909722222222222in"}The chain rule in calculus states that
 
 That is, given two variables, Error and weight, that are mediated by a
@@ -4841,7 +4847,7 @@ regression is used for classification rather than regression in the
 linear sense that most people are familiar with. It calculates the
 probability that a set of inputs match the label.
 
-![](./ebook-media/media/image71.png){width="1.169291338582677in"
+![](.//media/image71.png){width="1.169291338582677in"
 height="0.5263779527559055in"}Let's examine this little formula.
 
 For continuous inputs to be expressed as probabilities, they must output
@@ -4904,7 +4910,7 @@ Reasonable people can disagree about whether using neural networks for
 regression is overkill. The point of this post is just to explain how it
 can be done (it's easy).
 
-![](./ebook-media/media/image72.png){width="2.2389752843394577in"
+![](.//media/image72.png){width="2.2389752843394577in"
 height="1.8673228346456694in"}In the diagram above, x stands for input,
 the features passed forward from the network's previous layer. Many x's
 will be fed into each node of the last hidden layer, and each x will be
@@ -5078,7 +5084,7 @@ the classification of the CIFAR-100 benchmark.
 
 ### Evolution of CNNs for the CIFAR-10
 
-![](./ebook-media/media/image73.png){width="2.8006944444444444in"
+![](.//media/image73.png){width="2.8006944444444444in"
 height="3.547222222222222in"}We conduct 10 evolutionary runs on the
 generation of CNNs for the classification of the CIFAR-10 dataset. For
 the generated networks we analyse their fitness (i.e., accuracy on the
@@ -5089,7 +5095,7 @@ classification task), and the number of hidden-layers.
 Evolution of the fitness (top) and many hidden-layers (bottom) of the
 best individuals across generations.
 
-![](./ebook-media/media/image74.png){width="2.6333333333333333in"
+![](.//media/image74.png){width="2.6333333333333333in"
 height="6.151388888888889in"}Figure depicts the evolution of the average
 fitness and number of layers of the best CNNs across generations. A
 brief perusal of the results indicates that evolution is occurring, and
@@ -5587,11 +5593,11 @@ Cosine Similarity
 It turns out two vectors are just 66% of a triangle, so let's do a quick
 trig review.
 
-![](./ebook-media/media/image75.png){width="1.875in"
-height="1.875in"}Trigonometric functions like *sine*, *cosine* and
-*tangent* are ratios that use the lengths of a side of a right triangle
-(opposite, adjacent and hypotenuse) to compute the shape's angles. By
-feeding the sides into ratios like these
+![](.//media/image75.png){width="1.875in" height="1.875in"}Trigonometric
+functions like *sine*, *cosine* and *tangent* are ratios that use the
+lengths of a side of a right triangle (opposite, adjacent and
+hypotenuse) to compute the shape's angles. By feeding the sides into
+ratios like these
 
 We can also know the angles at which those sides intersect. Remember
 [SOH-CAH-TOA](http://mathworld.wolfram.com/SOHCAHTOA.html)?
@@ -5604,8 +5610,8 @@ measure the *angular distance* between words using something called
 *cosine similarity*. You can think of words as points of light in a dark
 canopy, clustered together in constellations of meaning.
 
-![](./ebook-media/media/image76.png){width="2.6868055555555554in"
-height="1.6868055555555554in"}![](./ebook-media/media/image77.png){width="2.9874015748031497in"
+![](.//media/image76.png){width="2.6868055555555554in"
+height="1.6868055555555554in"}![](.//media/image77.png){width="2.9874015748031497in"
 height="1.8625984251968504in"}To find that distance knowing only the
 word vectors, we need the equation for vector dot multiplication
 (multiplying two vectors to produce a single, scalar value).
@@ -5818,8 +5824,8 @@ Gaussian Process
 [Nando de Freitas's lecture on Gaussian
 Processes](https://www.youtube.com/watch?v=4vGiHC35j9s).
 
-![](./ebook-media/media/image78.png){width="3.5236220472440944in" height="3.9791327646544183in"}Generative Adversarial Networks (GANs)
---------------------------------------------------------------------------------------------------------------------------------------
+![](.//media/image78.png){width="3.5236220472440944in" height="3.9791327646544183in"}Generative Adversarial Networks (GANs)
+---------------------------------------------------------------------------------------------------------------------------
 
 [Generative Adversarial Networks
 (GANs)](https://deeplearning4j.org/generative-adversarial-network) are a
@@ -6140,8 +6146,8 @@ example belongs. For BOW, the one represents the word encountered.
 Below is an example of one-hot encoding for the phrase "The quick brown
 fox".
 
-![](./ebook-media/media/image79.png){width="3.039763779527559in" height="1.5838582677165354in"}Pooling
-------------------------------------------------------------------------------------------------------
+![](.//media/image79.png){width="3.039763779527559in" height="1.5838582677165354in"}Pooling
+-------------------------------------------------------------------------------------------
 
 Pooling, max pooling and average pooling are terms that refer to
 downsampling or subsampling within a convolutional network. Downsampling
@@ -6447,7 +6453,7 @@ get too upset about them whereas other regression methods flip out.
 Tensors
 -------
 
-![](./ebook-media/media/image80.png){width="1.2756944444444445in"
+![](.//media/image80.png){width="1.2756944444444445in"
 height="1.5041666666666667in"}Here is an example of tensor along a
 dimension (TAD):
 
@@ -6528,8 +6534,8 @@ Therefore, we can represent two-dimensional vectors as arrows on an x-y
 graph, with the coordinates x and y each representing one of the
 vector's values.
 
-![](./ebook-media/media/image81.png){width="2.3041666666666667in"
-height="1.2659722222222223in"}![](./ebook-media/media/image82.jpeg){width="0.625in"
+![](.//media/image81.png){width="2.3041666666666667in"
+height="1.2659722222222223in"}![](.//media/image82.jpeg){width="0.625in"
 height="0.55in"}Two vectors can relate to one another mathematically,
 and similarities between them (and therefore between anything you can
 vectorize, including words) can be measured with precision.
@@ -6614,11 +6620,11 @@ very brief description. You may find some of these to be useful if
 you're quite familiar with some architectures, but you aren't familiar
 with a one.
 
-![](./ebook-media/media/image83.png){width="6.692913385826771in"
+![](.//media/image83.png){width="6.692913385826771in"
 height="10.03976377952756in"}
 
-![](./ebook-media/media/image84.png){width="2.3618055555555557in" height="0.6895833333333333in"}Feedforward Neural Networks (FF or FFNN) and Perceptrons (P) 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+![](.//media/image84.png){width="2.3618055555555557in" height="0.6895833333333333in"}Feedforward Neural Networks (FF or FFNN) and Perceptrons (P) 
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 are very straightforward, they feed information from the front to the
 back (input and output, respectively). Neural networks are often
@@ -6639,7 +6645,7 @@ model the relationship between the input and output. Practically their
 use is a lot more limited, but they are popularly combined with other
 networks to form new networks.
 
-![](./ebook-media/media/image85.png){width="1.0284722222222222in"
+![](.//media/image85.png){width="1.0284722222222222in"
 height="0.6541666666666667in"}*Rosenblatt, Frank. "The perceptron: a
 probabilistic model for information storage and organization in the
 brain." Psychological Review 65.6 (1958): 386.*\
@@ -6654,7 +6660,7 @@ There's nothing more to it. Doesn't mean they don't have their uses, but
 most FFNNs with other activation functions don't get their own name.
 This mostly has to do with inventing them at the right time.
 
-![](./ebook-media/media/image86.png){width="0.7423611111111111in"
+![](.//media/image86.png){width="0.7423611111111111in"
 height="0.7513888888888889in"}*Broomhead, David S., and David Lowe.
 Radial basis functions, multi-variable functional interpolation and
 adaptive networks. No. RSRE-MEMO-4148. ROYAL SIGNALS AND RADAR
@@ -6689,7 +6695,7 @@ to the most similar state as the input; if humans see half a table we
 can image the other half, this network will converge to a table if
 presented with half noise and half a table.
 
-![](./ebook-media/media/image87.png){width="0.7666666666666667in"
+![](.//media/image87.png){width="0.7666666666666667in"
 height="0.7944444444444444in"}*Hopfield, John J. "Neural networks and
 physical systems with emergent collective computational abilities."
 Proceedings of the national academy of sciences 79.8 (1982):
@@ -6709,7 +6715,7 @@ neural networks and form the theoretical basis for BMs and HNs. MC isn't
 always considered neural networks, as goes for BMs, RBMs and HNs. Markov
 chains aren't always fully connected either.
 
-![](./ebook-media/media/image88.png){width="0.7755905511811023in"
+![](.//media/image88.png){width="0.7755905511811023in"
 height="0.8161417322834645in"}*Hayes, Brian. "First links in the Markov
 chain." American Scientist 101.2 (2013): 252.*\
 [Original Paper
@@ -6734,7 +6740,7 @@ temperature value, which if lowered lowers the energy of the cells. This
 lower energy causes their activation patterns to stabilise. The network
 reaches an equilibrium given the right temperature.
 
-![](./ebook-media/media/image89.png){width="0.35694444444444445in"
+![](.//media/image89.png){width="0.35694444444444445in"
 height="0.7in"}*Hinton, Geoffrey E., and Terrence J. Sejnowski.
 "Learning and relearning in Boltzmann machines." Parallel distributed
 processing: Explorations in the microstructure of cognition 1 (1986):
@@ -6756,7 +6762,7 @@ passing data forward and then back-propagating, you forward pass the
 data and then backwards pass the data (back to the first layer). After
 that, you train with forward-and-back-propagation.
 
-![](./ebook-media/media/image90.png){width="0.4534722222222222in"
+![](.//media/image90.png){width="0.4534722222222222in"
 height="0.6131944444444445in"}*Smolensky, Paul. Information processing
 in dynamical systems: Foundations of harmony theory. No. CU-CS-321-86.
 COLORADO UNIV AT BOULDER DEPT OF COMPUTER SCIENCE, 1986.*\
@@ -6782,7 +6788,7 @@ error to be the difference between the input and what came out. AEs can
 be built symmetrically when it comes to weights as well, so the encoding
 weights are the same as the decoding weights.
 
-![](./ebook-media/media/image91.png){width="0.5097222222222222in"
+![](.//media/image91.png){width="0.5097222222222222in"
 height="0.6944444444444444in"}*Bourlard, Hervé, and Yves Kamp.
 "Auto-association by multilayer Perceptrons and singular value
 decomposition." Biological cybernetics 59.4-5 (1988): 291-294.*\
@@ -6808,7 +6814,7 @@ certain error is passed back and trained, the other error will be
 spiking neural networks, where not all neurons fire all the time (and
 points are scored for biological plausibility).
 
-![](./ebook-media/media/image92.png){width="0.7354166666666667in"
+![](.//media/image92.png){width="0.7354166666666667in"
 height="0.9722222222222222in"}*Marc'Aurelio Ranzato, Christopher
 Poultney, Sumit Chopra, and Yann LeCun. "Efficient learning of sparse
 representations with an energy-based model." Proceedings of NIPS.
@@ -6834,7 +6840,7 @@ is a useful approach because neural networks are large graphs (in a
 way), so it helps if you can rule out influence from some nodes to other
 nodes as you dive into deeper layers.
 
-![](./ebook-media/media/image93.png){width="0.6305555555555555in"
+![](.//media/image93.png){width="0.6305555555555555in"
 height="0.8666666666666667in"}*Kingma, Diederik P., and Max Welling.
 "Auto-encoding Variational Bayes." arXiv preprint arXiv:1312.6114
 (2013).*\
@@ -6850,7 +6856,7 @@ original input without noise. This encourages the network not to learn
 details but broader features, as learning smaller features often turns
 out to be "wrong" due to it constantly changing noise.
 
-![](./ebook-media/media/image94.png){width="1.1964566929133857in"
+![](.//media/image94.png){width="1.1964566929133857in"
 height="0.6771653543307087in"}*Vincent, Pascal, et al. "Extracting and
 composing robust features with denoising auto-encoders." Proceedings of
 the 25th international conference on Machine learning. ACM, 2008.*\
@@ -6873,7 +6879,7 @@ to generate new data. If trained with contrastive divergence, it can
 even classify existing data because the neurons have been taught to look
 for different features.
 
-![](./ebook-media/media/image95.png){width="1.3680555555555556in"
+![](.//media/image95.png){width="1.3680555555555556in"
 height="0.8423611111111111in"}*Bengio, Yoshua, et al. "Greedy layer-wise
 training of deep networks." Advances in neural information processing
 systems 19 (2007): 153.*\
@@ -6916,7 +6922,7 @@ end to further process the data, which allows for highly non-linear
 abstractions. These networks are called DCNNs but the names and
 abbreviations between these two are often used interchangeably.
 
-![](./ebook-media/media/image96.png){width="0.7984251968503937in"
+![](.//media/image96.png){width="0.7984251968503937in"
 height="0.80708552055993in"}*LeCun, Yann, et al. "Gradient-based
 learning applied to document recognition." Proceedings of the IEEE 86.11
 (1998): 2278-2324.*\
@@ -6941,7 +6947,7 @@ similar inverse operations, mainly interpolation and extrapolation with
 biased assumptions (if a pooling layer uses max pooling, you can invent
 exclusively lower new data when reversing it).
 
-![](./ebook-media/media/image97.png){width="1.2951388888888888in"
+![](.//media/image97.png){width="1.2951388888888888in"
 height="0.7131944444444445in"}*Zeiler, Matthew D., et al.
 "Deconvolutional networks." Computer Vision and Pattern Recognition
 (CVPR), 2010 IEEE Conference on. IEEE, 2010.*\
@@ -6963,7 +6969,7 @@ transformations on images, such as changing the source of light or the
 rotation of a 3D object. These networks tend to be trained with
 back-propagation.
 
-![](./ebook-media/media/image98.png){width="1.7574792213473316in"
+![](.//media/image98.png){width="1.7574792213473316in"
 height="0.7188976377952756in"}*Kulkarni, Tejas D., et al. "Deep
 convolutional inverse graphics network." Advances in Neural Information
 Processing Systems. 2015.*\
@@ -6990,7 +6996,7 @@ of which can pose its own problems) but their dynamics need to be
 balanced as well. If prediction or generation becomes too good compared
 to the other, a GAN won't converge as there is intrinsic divergence.
 
-![](./ebook-media/media/image99.png){width="0.8534722222222222in"
+![](.//media/image99.png){width="0.8534722222222222in"
 height="0.6638888888888889in"}*Goodfellow, Ian, et al. "Generative
 adversarial nets." Advances in Neural Information Processing Systems.
 2014.*\
@@ -7021,7 +7027,7 @@ what happened x seconds before. In general, recurrent networks are a
 good choice for advancing or completing the information, such as
 auto-completion.
 
-![](./ebook-media/media/image100.png){width="0.9090540244969378in"
+![](.//media/image100.png){width="0.9090540244969378in"
 height="0.7200787401574803in"}*Elman, Jeffrey L. "Finding structure in
 time." Cognitive science 14.2 (1990): 179-211.*\
 [Original Paper PDF](https://crl.ucsd.edu/~elman/Papers/fsit.pdf)
@@ -7046,7 +7052,7 @@ or composing primitive music. Note that each of these gates has a weight
 to a cell in the previous neuron, so they typically require more
 resources to run.
 
-![](./ebook-media/media/image101.png){width="0.6838582677165355in"
+![](.//media/image101.png){width="0.6838582677165355in"
 height="0.5208661417322835in"}*Hochreiter, Sepp, and Jürgen Schmidhuber.
 "Long short-term memory." Neural Computation 9.8 (1997): 1735-1780.*\
 [Original Paper
@@ -7069,7 +7075,7 @@ other out, as you need a bigger network to regain some expressiveness
 which then, in turn, cancels out the performance benefits. In some cases
 where the extra expressiveness is not needed, GRUs can outperform LSTMs.
 
-![](./ebook-media/media/image102.png){width="1.2271653543307086in"
+![](.//media/image102.png){width="1.2271653543307086in"
 height="0.8838582677165354in"}*Chung, Junyoung, et al. "Empirical
 evaluation of gated recurrent neural networks on sequence modelling."
 arXiv preprint arXiv:1412.3555 (2014).*\
@@ -7114,8 +7120,8 @@ networks." IEEE Transactions on Signal Processing 45.11 (1997):
 [Original Paper
 PDF](http://www.di.ufpe.br/~fnj/RNA/bibliografia/BRNN.pdf)
 
-![](./ebook-media/media/image103.png){width="1.875589457567804in" height="0.4779527559055118in"}Deep Residual Networks (DRN) 
------------------------------------------------------------------------------------------------------------------------------
+![](.//media/image103.png){width="1.875589457567804in" height="0.4779527559055118in"}Deep Residual Networks (DRN) 
+------------------------------------------------------------------------------------------------------------------
 
 are very deep FFNNs with extra connections passing input from one layer
 to a later layer (often 2 to 5 layers) as well as the next layer.
@@ -7129,7 +7135,7 @@ to 5 layers one could expect to train. However, it has been proven that
 these networks are just RNNs without the explicit time-based
 construction and they're often compared to LSTMs without gates.
 
-![](./ebook-media/media/image104.png){width="0.9271642607174103in"
+![](.//media/image104.png){width="0.9271642607174103in"
 height="0.7409448818897638in"}*He, Kaiming, et al. "Deep residual
 learning for image recognition." arXiv preprint arXiv:1512.03385
 (2015).*\
@@ -7149,7 +7155,7 @@ network and the output layer acts as an observer of the activation
 patterns that unfold over time. During training, only the connections
 between the observer and the (soup of) hidden units are changed.
 
-![](./ebook-media/media/image105.png){width="1.1464555993000876in"
+![](.//media/image105.png){width="1.1464555993000876in"
 height="0.9161417322834645in"}*Jaeger, Herbert, and Harald Haas.
 "Harnessing nonlinearity: Predicting chaotic systems and saving energy
 in wireless communication." science 304.5667 (2004): 78-80.*\
@@ -7166,7 +7172,7 @@ train the weights in a single step according to the least-squares fit
 (lowest error across all functions). This results in a much less
 expressive network but it's also much faster than backpropagation.
 
-![](./ebook-media/media/image106.png){width="0.9520833333333333in"
+![](.//media/image106.png){width="0.9520833333333333in"
 height="0.7680555555555556in"}*Cambria, Erik, et al. "Extreme learning
 machines \[trends & controversies\]." IEEE Intelligent Systems 28.6
 (2013): 30-59.*\
@@ -7185,7 +7191,7 @@ threshold is reached, it releases its' energy to other neurons. This
 creates a spiking like a pattern, where nothing happens for a while
 until a threshold is suddenly reached.
 
-![](./ebook-media/media/image107.png){width="0.8180555555555555in"
+![](.//media/image107.png){width="0.8180555555555555in"
 height="0.6222222222222222in"}*Maass, Wolfgang, Thomas Natschläger, and
 Henry Markram. "Real-time computing without stable states: A new
 framework for neural computation based on perturbations." Neural
@@ -7213,7 +7219,7 @@ it to distinguish between Snoopy, Garfield AND Simon's cat, or even
 higher dimensions distinguishing even more cartoon characters. SVMs are
 not always considered neural networks.
 
-![](./ebook-media/media/image108.png){width="0.8972222222222223in"
+![](.//media/image108.png){width="0.8972222222222223in"
 height="0.6833333333333333in"}*Cortes, Corinna, and Vladimir Vapnik.
 "Support-vector networks." Machine learning 20.3 (1995): 273-297.*\
 [Original Paper
@@ -7409,2001 +7415,216 @@ Steps to configure Neural Networks (pseudo-code)
 -   Model Eval data and ouput // evaluate the effectiveness of model
     over date with epocs
 
-Appendix D -- R vs Python for Data Science -- Raw (Needs tiding up and verification from Robin)
-===============================================================================================
+Appendix D -- R vs Python vs Java for Data Science
+==================================================
+
+R: BELOVED BY DATA SCIENTISTS
+-----------------------------
+
+Originally developed by statisticians as an open-source alternative to
+expensive suites of statistical software like SAS and MATLAB, R is one
+of the most popular languages for data analysis. It's been likened to
+Excel on steroids, able to sift through reams of data, execute
+sophisticated analyses, and produce publication-quality graphs and
+tables. What makes R special? In short, it's a tool built with data
+analysis in mind.
+
+As data science has become critical to many businesses, R's popularity
+has skyrocketed. Organizations as large and diverse as Google, Facebook,
+Microsoft, Bank of America, and the National Weather Service have all
+turned to R for reporting, analysis, and visualization.
+
+A key component of R is that, unlike object-oriented programming
+languages like Java or Python, R is a **procedural language**, meaning
+it relies on a series of step-by-step sub-routines to execute a
+programming task. The key difference here is that R uses procedures to
+operate on data, where [object-oriented
+programming](https://www.upwork.com/hiring/development/object-oriented-programming/)
+bundles procedures and data together as parts of objects. The advantage
+of procedural programming is that it gives clear visibility into complex
+operations with lots of dependencies, which can be important for many
+data analysis tasks. The tradeoff is that this often requires more lines
+of code than object-oriented languages.
+
+Another benefit of R? It's supported by a vibrant community of
+[developers](https://www.upwork.com/hire/r-freelancers/), especially
+academic statisticians and data scientists.
+
+Java: Speed at scale
+--------------------
+
+[Java](https://www.upwork.com/hiring/development/the-java-platform/) is
+powerful, portable, and scalable, which makes the platform perfect for
+building enterprise-scale applications and supporting rapid growth. Java
+also includes many tools, collectively known as **the Java Platform**.
+This robust, open-source development environment includes libraries,
+frameworks, APIs, the Java Runtime Environment, Java plug-ins, and the
+Java Virtual Machine (JVM). Taken together, these tools simplify coding
+with Java and support development at every level, giving developers
+everything they need to build Java web systems and applications.
+
+Java's speed allows it to outperform other languages and frameworks,
+which is a big part of why it's so well suited to large-scale
+applications. These performance gains are what prompted Twitter to shift
+its search engine to Java from Ruby on Rails and move more of its
+back-end stack to the Java Virtual Machine.
+
+Another key component of Java is that it comes as close to being 100%
+object-oriented as you can get. With that comes all the benefits of
+object-oriented programming, from ease of development to modular
+software to flexibility and extensibility. As one of the most widely
+known programming languages, it's easy to find and hire talented
+[developers](https://www.upwork.com/hire/java-developers/). What's more,
+Java's massive community of developers means that there's lots of
+excellent documentation around.
+
+Python: Built for flexibility
+-----------------------------
+
+Like Java,
+[Python](https://www.upwork.com/hiring/development/python-programming-language/)
+is built to handle high-traffic sites. It's fast and efficient, with an
+emphasis on code readability. Python's motto is "there should be
+one---and preferably only one---obvious way to do it." That can mean
+there's a bit of a learning curve as
+[developers](https://www.upwork.com/hire/python-developers/) learn the
+ins and outs of Python syntax, but the upside is an ability to express
+concepts with fewer lines of code than would be possible in languages
+like
+[C++](https://www.upwork.com/hiring/development/cplusplus-the-language/)
+or Java.
+
+Python's other great strength is an extensive set of libraries that
+allow it to perform a wide array of tasks. In particular, the libraries
+**NumPy** and **matplotlib** enable Python to perform many of the
+analysis and plotting functionalities of MATLAB. These libraries have
+since been built upon by a number of other libraries that extend
+Python's functionality even further.
+
+In short, Python represents a compromise between R and Java, combining
+the sophistication of the former with the speed and scalability of the
+latter.
+
+Which Language Is Right for Your Data Needs?
+--------------------------------------------
+
+The short answer is that it depends on the kind of work you're trying to
+do. A good rule of thumb might be if your work is closer to mathematics
+and statistics, R is probably your best bet. If your work is closer to
+programming, go with Python, and if you're building enterprise-size
+products, take a look at Java. That said, many [data
+scientists](https://www.upwork.com/hire/data-science-freelancers/) are
+increasingly turning to combinations of languages that allow them to
+take advantage of the individual strengths of each.
 
-If you're interested in a career in data, and you're familiar with the
-set of skills you'll need to master, you know that Python and R are two
-of the most popular languages for data analysis. When it comes to data
-analysis, both Python and R are simple (and free) to install and
-relatively easy to get started with. If you're a new to the world of
-data science and don't have experience in either language, or with
-programming in general, it makes sense to be unsure whether to learn R
-or Python first.
+### R
 
-To get a better background on this discussion, we recommend an
-[excellent presentation](https://blog.dominodatalab.com/video-huge-debate-r-vs-python-data-science/)
-on recent advances of both languages by Eduardo Ariño de la Rubia, the
-Chief Data Scientist at Domino Data Lab. It shows how both Python and
-R have progressed so far. Both languages have become well rounded for
-data science. Some people point to traditional weaknesses of each
-language (e.g. data visualization in Python or data wrangling in R), but
-thanks to recent packages like **Altair** for Python and **dplyr**
-for R, those weaknesses have been alleviated.
-
-This section is a summary of the modern advances discussed in the video.
-
-**The Case for Python**
-
-Key quote: *\"I have this hope that there is a better way. Higher-level
-tools that actually let you see the structure of the software more
-clearly will be of tremendous value.\"* - Guido van Rossum
-
-Guido van Rossum was the creator of the Python programming language.
-
-**Why Python is Great for Data Science**
-
--   Python was released in 1989. It has been around for a long time, and
-    it has object-oriented programming baked in.
-
--   IPython / Jupyter\'s notebook IDE is excellent.
-
--   There\'s a large ecosystem. For example, Scikit-Learn\'s page
-    receives 150,000 - 160,000 unique visitors per month.
-
--   There\'s Anaconda from Continuum Analytics, making package
-    management very easy.
-
--   The Pandas library makes it simple to work with data frames and time
-    series data.
-
-**Advances in Modern Python for Data Science**
-
-**1. Collecting Data**
-
-[Feather](https://github.com/wesm/feather) (Fast reading and writing of
-data to disk)
-
--   Fast, lightweight, easy-to-use binary format for filetypes
-
--   Makes pushing data frames in and out of memory as simply as possible
-
--   Language agnostic (works across Python and R)
-
--   High read and write performance (600 MB/s vs 70 MB/s of CSVs)
-
--   Great for passing data from one language to another in your pipeline
-
-[Ibis](https://github.com/cloudera/ibis) (Pythonic way of accessing
-datasets)
-
--   Bridges the gap between local Python environments and remote
-    storages like Hadoop or SQL
-
--   Integrates with the rest of the Python ecosystem
-
-[ParaText](https://github.com/wiseio/paratext) (Fastest way to get fixed
-records and delimited data off of disk and into RAM)
-
--   C++ library for reading text files in parallel on multi-core
-    machines
-
--   Integrates with Pandas: 
-    paratext.load\_csv\_to\_pandas(\"data.csv\")
-
--   Enables CSV reading of up to 2.5GB a second
-
--   A bit difficult to install
-
-[bcolz](https://github.com/Blosc/bcolz) (Helps you deal with data
-that\'s larger than your RAM)
-
--   Compressed columnar storage
-
--   You can define a Pandas-like data structure, compress it, and store
-    it in memory
-
--   Helps get around the performance bottleneck of querying from slower
-    memory
-
-**2. Data Visualization**
-
-[Altair](https://altair-viz.github.io/) (Like a Matplotlib 2.0 that\'s
-much more user friendly)
-
--   You can spend more time understanding your data and its meaning.
-
--   Altair\'s API is simple, friendly and consistent.
-
--   Create beautiful and effective visualizations with a minimal amount
-    of code.
-
--   Takes a tidy DataFrame as the data source.
-
--   Data is mapped to visual properties using the group-by operation of
-    Pandas and SQL.
-
--   Primarily for creating static plots.
-
-[Bokeh](http://bokeh.pydata.org/en/latest/) (Reusable components for the
-web)
-
--   Interactive visualization library that targets modern web browsers
-    for presentation.
-
--   Able to embed interactive visualizations.
-
--   D3.js for Python, except better.
-
--   Already has a big gallery that you can borrow steal from.
-
-[Geoplotlib](https://github.com/andrea-cuttone/geoplotlib) (Interactive
-maps)
-
--   Extremely clean and simple way to create maps.
-
--   Can take a simple list of names, latitudes, and longitudes as input.
-
-**3. Cleaning & Transforming Data**
-
-[Blaze](http://blaze.pydata.org/) (NumPy for big data)
-
--   Translates a NumPy / Pandas-like syntax to data computing systems.
-
--   The same Python code can query data across a variety of data storage
-    systems.
-
--   Good way to future-proof your data transformations and
-    manipulations.
-
-[xarray](http://xarray.pydata.org/en/stable/) (Handles n-dimensional
-data)
-
--   N-dimensional arrays of core pandas data structures (e.g. if the
-    data has a time component as well).
-
--   Multi-dimensional Pandas dataframes.
-
-[Dask](http://dask.pydata.org/en/latest/) (Parallel computing)
-
--   Dynamic task scheduling system.
-
--   \"Big Data\" collections like parallel arrays, dataframes, and lists
-    that extend common interfaces like NumPy, Pandas, or Python
-    iterators to larger-than-memory or distributed environments.
-
-**4. Modeling**
-
-[Keras](https://keras.io/) (Simple deep learning)
-
--   Higher level interface for Theano and Tensorflow
-
--   We wrote a complete [Keras tutorial for
-    beginners](https://elitedatascience.com/keras-tutorial-deep-learning-in-python)
-
-[PyMC3](https://github.com/pymc-devs/pymc3) (Probabilistic programming)
-
--   Contains the most high end research from labs in academia
-
--   Powerful Bayesian statistical modeling
-
-### The Case for R
-
-Key quote: *\"There should be an interface to the very best numerical
-algorithms available.\"* - John Chambers
-
-John Chambers actually created S, the precursor to R, but the spirit of
-R is the same.
-
-**Why R is Great for Data Science**
-
--   R was created in 1992, after Python, and was therefore able to learn
-    from Python\'s lessons.
-
--   Rcpp makes it very easy to extend R with C++.
-
--   RStudio is a mature and excellent IDE.
-
--   (Our note) CRAN is a candyland filled with machine learning
-    algorithms and statistical tools.
-
--   (Our note) The Caret package makes it easy to use different
-    algorithms from 1 single interface, much like what Scikit-Learn has
-    done for Python
-
-**Advances in Modern R for Data Science**
-
-**1. Collecting Data**
-
-[Feather](https://cran.r-project.org/web/packages/feather/index.html) (Fast
-reading and writing of data to disk)
-
--   Same as for Python
-
-[Haven](https://cran.r-project.org/web/packages/haven/index.html)
-(Interacts with SAS, Stata, SPSS data)
-
--   Reads SAS and brings it into a dataframe
-
-[Readr](https://cran.r-project.org/web/packages/readr/index.html) (Reimplements
-read.csv into something better)
-
--   read.csv sucks because it takes strings into factors, it\'s slow,
-    etc
-
--   Creates a contract for what the data features should be, making it
-    more robust to use in production
-
--   Much faster than read.csv
-
-[JsonLite](https://cran.r-project.org/web/packages/jsonlite/index.html) (Handles
-JSON data)
-
--   Intelligently turns JSON into matrices or dataframes
-
-**2. Data Visualization**
-
-[ggplot2](http://ggplot2.org/) (ggplot2 was recently massively upgraded)
-
--   Recently had a very significant upgrade (to the point where old code
-    will break)
-
--   You can do faceting and zoom into facets
-
-[htmlwidgets](http://www.htmlwidgets.org/) (Reusable components)
-
--   Brings of the best of JavaScript visualization to R
-
--   Has a fantastic gallery you can borrow steal from
-
-[Leaflet](https://rstudio.github.io/leaflet/) (Interactive maps for the
-web)
-
--   Nice Javascript maps that you can embed in web applications
-
-[Tilegramsr](https://github.com/bhaskarvk/tilegramsR) (Proportional
-maps)
-
--   Create maps that are proportional to the population
-
--   Makes it possible to create more interesting maps than those that
-    only highlight major cities due to population density
-
-**3. Cleaning & Transforming Data**
-
-[Dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
-(Swiss army chainsaw)
-
--   The way R should\'ve been from the first place
-
--   Has a bunch of amazing joins
-
--   Makes data wrangling much more humane
-
-[Broom](https://github.com/tidyverse/broom) (Tidy your models)
-
--   Fixes model outputs (gets around the weird incantations needed to
-    see model coefficients)
-
--   tidy, augment, glance
-
-[Tidy\_text](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html)
-(Text as tidy data)
-
--   Text mining using dplyr, ggplot2, and other tidy tools
-
--   Makes natural language processing in R much easier
-
-**4. Modeling**
-
-[MXNet](http://mxnet.io/) (Simple deep learning)
-
--   Intuitive interface for building deep neural networks in R
-
--   Not quite as nice as Keras
-
-[TensorFlow](https://rstudio.github.io/tensorflow/)
-
--   Now has an interface in R
-
-**Our Recommendation**
-
-As you can see, both languages are actively being developed and have an
-impressive suite of tools already. It sounds cliché to say this, but
-there\'s no one-size-fits-all answer.
-
-If you\'re just starting out, one simple way to choose would be based on
-your comfort zone. For example, if you come from a C.S./developer
-background, you\'ll probably feel more comfortable with Python. On the
-other hand, if you come from a statistics/analyst background, R will
-likely be more intuitive.
-
-Illustrate differences through code samples
--------------------------------------------
-
-This section aims to look at the languages more objectively. We'll
-analyse a dataset side by side in Python and R, and show what code is
-needed in both languages to achieve the same result. This will let us
-understand the strengths and weaknesses of each language without the
-conjecture.
-
-We'll be analysing a dataset of NBA players and their performance in the
-2013-2014 season. You can download the file
-[here](https://www.dropbox.com/s/b3nv38jjo5dxcl6/nba_2013.csv?dl=0). For
-each step in the analysis, we'll show the Python and R code, along with
-some explanation and discussion of the different approaches. Without
-further ado, let's get this head to head Python vs R matchup started!
-
-### Importing a CSV
-
-**R**
-
-nba \<- read.csv(\"nba\_2013.csv\")
-
-**Python**
-
-import pandas\
-nba = pandas.read\_csv(\"nba\_2013.csv\")
-
-The above code will load the csv file nba\_2013.csv, which contains data
-on NBA players from the 2013-2014 season, into the variable nba in both
-languages. The only real difference is that in Python, we need to import
-the [pandas](http://pandas.pydata.org/) library to get access to
-Dataframes.
-[Dataframes](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html)
-are available in both R and Python, and are two-dimensional arrays
-(matrices) where each column can be of a different datatype. At the end
-of this step, the csv file has been loaded by both languages into a
-dataframe.
-
-### Finding the number of rows
-
-**R**
-
-dim(nba)\
-\[1\] 481 31
-
-**Python**
-
-nba.shape\
-(481, 31)
-
-This prints out the number of players and the number of columns in each.
-We have 481 rows, or players, and 31 columns containing data on the
-players.
-
-### Looking at the first row of the data
-
-R
-
-head(nba, 1)\
-player pos age bref\_team\_id\
-1 Quincy Acy SF 23 TOT\
-\[output truncated\]
-
-Python
-
-nba.head(1)\
-player pos age bref\_team\_id\
-0 Quincy Acy SF 23 TOT\
-\[output truncated\]
-
-This is pretty much identical. Both print out the first row of the data,
-and the syntax is very similar. Python is more object-oriented here, and
-head is a method on the dataframe object, and R has a separate head
-function. This is a common theme you'll see as you start to do analysis
-with these languages, where Python is more object-oriented, and R is
-more functional.
-
-### Find the average of each statistic
-
-Let's find the average value for each statistic. The columns, as you can
-see, have names like fg (field goals made), and ast (assists). These are
-the season statistics for the player. If you want a fuller explanation
-of all the stats, look [here](http://stats.nba.com/help/glossary).
-
-R
-
-sapply(nba, mean, na.rm=TRUE)\
-player NA\
-pos NA\
-age 26.5093555093555\
-bref\_team\_id NA\
-\[output truncated\]
-
-Python
-
-nba.mean()\
-age 26.509356\
-g 53.253638\
-gs 25.571726\
-\[output truncated\]
-
-There are some major differences in approach here. In both, we're
-applying a function across the dataframe columns. In python, the mean
-method on dataframes will find the mean of each column by default.
-
-In R, taking the mean of string values will just result in NA --- not
-available. However, we do need to ignore NA values when we take the mean
-(requiring us to pass na.rm=TRUE into the mean function). If we don't,
-we end up with NA for the mean of columns like x3p.. This column is
-three point percentage. Some players didn't take three point shots, so
-their percentage is missing. If we try the mean function in R, we get NA
-as a response, unless we specify na.rm=TRUE, which ignores NA values
-when taking the mean. The .mean() method in Python already ignores these
-values by default.
-
-### Make pairwise scatterplots
-
-One common way to explore a dataset is to see how different columns
-correlate to others. We'll compare the ast, fg, and trb columns.
-
-R
-
-library(GGally)\
-ggpairs(nba\[,c(\"ast\", \"fg\", \"trb\")\])
-
-![r\_pairs](./ebook-media/media/image109.png){width="6.5in"
-height="6.5in"}
-
-Python
-
-import seaborn as sns\
-import matplotlib.pyplot as plt\
-sns.pairplot(nba\[\[\"ast\", \"fg\", \"trb\"\]\])\
-plt.show()
-
-![python\_pairs](./ebook-media/media/image110.png){width="5.6875in"
-height="5.552083333333333in"}
-
-We get very similar plots in the end, but this shows how the R data
-science ecosystem has many smaller packages
-([GGally](https://cran.r-project.org/web/packages/GGally/index.html) is
-a helper package for [ggplot2](http://ggplot2.org/), the most-used R
-plotting package), and many more visualization packages in general. In
-Python, [matplotlib](http://matplotlib.org/) is the primary plotting
-package, and [seaborn](http://seaborn.pydata.org/) is a widely used
-layer over matplotlib. With visualization in Python, there is usually
-one main way to do something, whereas in R, there are many packages
-supporting different methods of doing things (there are at least a half
-dozen packages to make pair plots, for instance).
-
-### Make clusters of the players
-
-One good way to explore this kind of data is to generate cluster plots.
-These will show which players are most similar.
-
-R
-
-library(cluster)\
-set.seed(1)\
-isGoodCol \<- function(col){\
-sum(is.na(col)) == 0 && is.numeric(col)\
-}\
-goodCols \<- sapply(nba, isGoodCol)\
-clusters \<- kmeans(nba\[,goodCols\], centers=5)\
-labels \<- clusters\$cluster
-
-Python
-
-from sklearn.cluster import KMeans\
-kmeans\_model = KMeans(n\_clusters=5, random\_state=1)\
-good\_columns = nba.\_get\_numeric\_data().dropna(axis=1)\
-kmeans\_model.fit(good\_columns)\
-labels = kmeans\_model.labels\_
-
-In order to cluster properly, we remove any non-numeric columns, or
-columns with missing values (NA, Nan, etc). In R, we do this by applying
-a function across each column, and removing it if it has any missing
-values or isn't numeric. We then use the
-[cluster](https://cran.r-project.org/web/packages/cluster/index.html)
-package to perform
-[k-means](https://en.wikipedia.org/wiki/K-means_clustering) and find 5
-clusters in our data. We set a random seed using set.seed to be able to
-reproduce our results.
-
-In Python, we use the main Python machine learning package,
-[scikit-learn](http://scikit-learn.org/), to fit a k-means clustering
-model and get our cluster labels. We perform very similar methods to
-prepare the data that we used in R, except we use the get\_numeric\_data
-and dropna methods to remove non-numeric columns and columns with
-missing values.
-
-### Plot players by cluster
-
-We can now plot out the players by cluster to discover patterns. One way
-to do this is to first use
-[PCA](https://en.wikipedia.org/wiki/Principal_component_analysis) to
-make our data 2-dimensional, then plot it, and shade each point
-according to cluster association.
-
-**R**
-
-nba2d \<- prcomp(nba\[,goodCols\], center=TRUE)\
-twoColumns \<- nba2d\$x\[,1:2\]\
-clusplot(twoColumns, labels)
-
-![r\_clus](./ebook-media/media/image111.png){width="6.5in"
-height="6.5in"}
-
-**Python**
-
-from sklearn.decomposition import PCA\
-pca\_2 = PCA(2)\
-plot\_columns = pca\_2.fit\_transform(good\_columns)\
-plt.scatter(x=plot\_columns\[:,0\], y=plot\_columns\[:,1\], c=labels)\
-plt.show()
-
-![python\_clus](./ebook-media/media/image112.png){width="5.260416666666667in"
-height="3.5520833333333335in"}
-
-Made a scatter plot of our data, and shaded or changed the icon of the
-data according to cluster. In R, the clusplot function was used, which
-is part of the cluster library. We performed PCA via the pccomp function
-that is builtin to R.
-
-With Python, we used the PCA class in the scikit-learn library. We used
-matplotlib to create the plot.
-
-### Split into training and testing sets
-
-If we want to do supervised machine learning, it's a good idea to split
-the data into training and testing sets so we don't
-[overfit](https://en.wikipedia.org/wiki/Overfitting).
-
-**R**
-
-trainRowCount \<- floor(0.8 \* nrow(nba))\
-set.seed(1)\
-trainIndex \<- sample(1:nrow(nba), trainRowCount)\
-train \<- nba\[trainIndex,\]\
-test \<- nba\[-trainIndex,\]
-
-**Python**
-
-train = nba.sample(frac=0.8, random\_state=1)\
-test = nba.loc\[\~nba.index.isin(train.index)\]
-
-You'll notice that R has many more data-analysis focused builtins, like
-floor, sample, and set.seed, whereas these are called via packages in
-Python (math.floor, random.sample, random.seed). In Python, the recent
-version of pandas came with a sample method that returns a certain
-proportion of rows randomly sampled from a source dataframe --- this
-makes the code much more concise. In R, there are packages to make
-sampling simpler, but aren't much more concise than using the built-in
-sample function. In both cases, we set a random seed to make the results
-reproducible.
-
-**Univariate linear regression**
-
-Let's say we want to predict number of assists per player from field
-goals made per player.
-
-**R**
-
-fit \<- lm(ast \~ fg, data=train)\
-predictions \<- predict(fit, test)
-
-**Python**
-
-from sklearn.linear\_model import LinearRegression\
-lr = LinearRegression()\
-lr.fit(train\[\[\"fg\"\]\], train\[\"ast\"\])\
-predictions = lr.predict(test\[\[\"fg\"\]\])
-
-Scikit-learn has a linear regression model that we can fit and generate
-predictions from. R relies on the built-in lm and predict functions.
-predict will behave differently depending on the kind of fitted model
-that is passed into it --- it can be used with a variety of fitted
-models.
-
-### Calculate summary statistics for the model
-
-**R**
-
-summary(fit)\
-Call:\
-lm(formula = ast \~ fg, data = train)\
-\
-Residuals:\
-Min 1Q Median 3Q Max\
--228.26 -35.38 -11.45 11.99 559.61\
-\[output truncated\]
-
-**Python**
-
-import statsmodels.formula.api as sm\
-model = sm.ols(formula=\'ast \~ fga\', data=train)\
-fitted = model.fit()\
-fitted.summary()\
-OLS Regression Results
-
-Dep. Variable: ast\
-R-squared: 0.568\
-Model: OLS\
-Adj. R-squared: 0.567\
-\[output truncated\]
-
-If we want to get summary statistics about the fit, like [r-squared
-value](https://en.wikipedia.org/wiki/Coefficient_of_determination),
-we'll need to do a bit more in Python than in R. With R, we can use the
-builtin summary function to get information on the model. With Python,
-we need to use the [statsmodels](http://statsmodels.sourceforge.net/)
-package, which enables many statistical methods to be used in Python. We
-get similar results, although generally it's a bit harder to do
-statistical analysis in Python, and some statistical methods that exist
-in R don't exist in Python.
-
-### Fit a random forest model
-
-Our linear regression worked well in the single variable case, but we
-suspect there may be
-[nonlinearities](https://en.wikipedia.org/wiki/Nonlinear_system) in the
-data. Thus, we want to fit a [random
-forest](https://en.wikipedia.org/wiki/Random_forest) model.
-
-R
-
-library(randomForest)\
-predictorColumns \<- c(\"age\", \"mp\", \"fg\", \"trb\", \"stl\",
-\"blk\")\
-rf \<- randomForest(train\[predictorColumns\], train\$ast, ntree=100)\
-predictions \<- predict(rf, test\[predictorColumns\])
-
-Python
-
-from sklearn.ensemble import RandomForestRegressor\
-predictor\_columns = \[\"age\", \"mp\", \"fg\", \"trb\", \"stl\",
-\"blk\"\]\
-rf = RandomForestRegressor(n\_estimators=100, min\_samples\_leaf=3)\
-rf.fit(train\[predictor\_columns\], train\[\"ast\"\])\
-predictions = rf.predict(test\[predictor\_columns\])
-
-The main difference here is that we needed to use the randomForest
-library in R to use the algorithm, whereas it was built in to
-scikit-learn in Python. scikit-learn has a unified interface for working
-with many different machine learning algorithms in Python, and there's
-usually only one main implementation of each algorithm in Python. With
-R, there are many smaller packages containing individual algorithms,
-often with inconsistent ways to access them. This results in a greater
-diversity of algorithms (many have several implementations, and many are
-fresh out of research labs), but with a bit of a usability hit.
-
-### Calculate error
-
-Now that we've fit two models, let's calculate error. We'll use
-[MSE](https://en.wikipedia.org/wiki/Mean_squared_error).
-
-R
-
-mean((test\[\"ast\"\] - predictions)\^2)\
-4573.86778567462
-
-Python
-
-from sklearn.metrics import mean\_squared\_error\
-mean\_squared\_error(test\[\"ast\"\], predictions)\
-4166.9202475632374
-
-In Python, the scikit-learn library has a variety of error metrics that
-we can use. In R, there are likely some smaller libraries that calculate
-MSE, but doing it manually is pretty easy in either language. There's a
-small difference in errors that almost certainly due to parameter
-tuning, and isn't a big deal.
-
-### Download a webpage
-
-Now that we have data on NBA players from 2013-2014, let's scrape some
-additional data to supplement it. We'll just look at one box score from
-the NBA Finals
-[here](http://www.basketball-reference.com/boxscores/201506140GSW.html)
-to save time.
-
-R
-
-library(RCurl)\
-url \<-
-\"<http://www.basketball-reference.com/boxscores/201506140GSW.html>\"\
-data \<- readLines(url)
-
-Python
-
-import requests\
-url =
-\"<http://www.basketball-reference.com/boxscores/201506140GSW.html>\"\
-data = requests.get(url).content
-
-In Python, the [requests](http://docs.python-requests.org/en/latest/)
-package makes downloading web pages easy, with a consistent API for all
-request types. In R,
-[RCurl](https://cran.r-project.org/web/packages/RCurl/index.html)
-provides a similarly simple way to make requests. Both download the
-webpage to a character datatype. Note: this step is unnecessary for the
-next step in R, but is shown for comparisons's sake.
-
-### Extract player box scores
-
-Now that we have the web page, we'll need to parse it to extract scores
-for players.
-
-R
-
-library(rvest)\
-page \<- read\_html(url)\
-table \<- html\_nodes(page, \".stats\_table\")\[3\]\
-rows \<- html\_nodes(table, \"tr\")\
-cells \<- html\_nodes(rows, \"td a\")\
-teams \<- html\_text(cells)\
-\
-extractRow \<- function(rows, i){\
-if(i == 1){\
-return\
-}\
-row \<- rows\[i\]\
-tag \<- \"td\"\
-if(i == 2){\
-tag \<- \"th\"\
-}\
-items \<- html\_nodes(row, tag)\
-html\_text(items)\
-}\
-\
-scrapeData \<- function(team){\
-teamData \<- html\_nodes(page, paste(\"\#\",team,\"\_basic\",
-sep=\"\"))\
-rows \<- html\_nodes(teamData, \"tr\")\
-lapply(seq\_along(rows), extractRow, rows=rows)\
-}\
-\
-data \<- lapply(teams, scrapeData)
-
-Python
-
-from bs4 import BeautifulSoup\
-import re\
-soup = BeautifulSoup(data, \'html.parser\')\
-box\_scores = \[\]\
-for tag in soup.find\_all(id=re.compile(\"\[A-Z\]{3,}\_basic\")):\
-rows = \[\]\
-for i, row in enumerate(tag.find\_all(\"tr\")):\
-if i == 0:\
-continue\
-elif i == 1:\
-tag = \"th\"\
-else:\
-tag = \"td\"\
-row\_data = \[item.get\_text() for item in row.find\_all(tag)\]\
-rows.append(row\_data)\
-box\_scores.append(rows)
-
-This will create a list containing two lists, the first with the box
-score for CLE, and the second with the box score for GSW. Both contain
-the headers, along with each player and their in-game stats. We won't
-turn this into more training data now, but it could easily be
-transformed into a format that could be added to our nba dataframe.
-
-The R code is more complex than the Python code, because there isn't a
-convenient way to use regular expressions to select items, so we have to
-do additional parsing to get the team names from the HTML. R also
-discourages using for loops in favor of applying functions along
-vectors. We use lapply to do this, but since we need to treat each row
-different depending on whether it's a header or not, we pass the index
-of the item we want, and the entire rows list into the function.
-
-We use rvest, a new and widely used R web scraping package to extract
-the data we need. Note that we can pass a url directly into rvest, so
-the last step wasn't needed in R.
-
-In Python, we use
-[BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/),
-the most commonly used web scraping package. It enables us to loop
-through the tags and construct a list of lists in a straightforward way.
-
-Python vs R in Conclusion
--------------------------
-
-We've looked at how to analyse a dataset with R and Python. There are
-many tasks we didn't dive into, such as persisting the results of our
-analysis, sharing the results with others, testing and making things
-production-ready, and making more visualizations. We'll dive into these
-later, which will let us make some more definitive conclusions. For now,
-here's what we can say:
-
-**R is more functional, Python is more object-oriented**
-
-As we saw from functions like lm, predict, and others, R lets functions
-do most of the work. Contrast this to the LinearRegression class in
-Python, and the sample method on dataframes.
-
-**R has more data analysis built-ins, Python relies on packages**
-
-When we looked at summary statistics, we could use the summary built-in
-function in R, but had to import the statsmodels package in Python. The
-dataframe is a built-in construct in R, but must be imported via the
-pandas package in Python.
-
-**Python has "main" packages for data analysis tasks, R has a larger
-ecosystem of small packages**
-
-With Python, we can do linear regression, random forests, and more with
-the scikit-learn package. It offers a consistent API, and is
-well-maintained. In R, we have a greater diversity of packages, but also
-greater fragmentation and less consistency (linear regression is a
-builtin, lm, randomForest is a separate package, etc).
-
-**R has more statistical support in general**
-
-R was built as a statistical language, and it shows. statsmodels in
-Python and other packages provide decent coverage for statistical
-methods, but the R ecosystem is far larger.
-
-**It's usually more straightforward to do non-statistical tasks in
-Python**
-
-With well-maintained libraries like BeautifulSoup and requests, web
-scraping in Python is far easier than in R. This applies to other tasks
-that we didn't look into closely, like saving to databases, deploying
-web servers, or running complex workflows.
-
-**There are many parallels between the data analysis workflow in both**
-
-There are clear points of inspiration between both R and Python (pandas
-Dataframes were inspired by R dataframes, the *rvest* package was
-inspired by *BeautifulSoup*), and both ecosystems continue to grow
-stronger. It's remarkable how similar the syntax and approaches are for
-many common tasks in both languages.
-
- More comparison using another data set:
-----------------------------------------
-
-### Comparative analysis of genome data
-
-To directly compare R and Python, I am following [Zhuyi Xue's "A
-Comprehensive Introduction To Your Genome With the SciPy
-Stack"](https://www.toptal.com/python/comprehensive-introduction-your-genome-scipy)
-(with some minor tweaks here and there). He gives a nice introduction to
-the data, so I will not repeat it here but focus on the comparison
-between the code lines.
-
-For R, I am working with [RStudio](https://www.rstudio.com/), for Python
-with [Anaconda](https://docs.continuum.io/) and
-[Spyder](https://pythonhosted.org/spyder/).
-
-***Python*:**
-
-For this analysis, we need the [SciPy
-stack](https://www.scipy.org/index.html) with
-[pandas](http://pandas.pydata.org/) for data wrangling and
-[matplotlib](http://matplotlib.org/) for visualisation.
-[Anaconda](https://docs.continuum.io/) already comes with all these
-packages that we need. Zhuyi Xue first imports pandas as "pd", so that
-we can call pandas function by prefixing them with "pd.".
-
-import pandas as pd
-
-***R:***
-
-While the code could be replicated with base R, I prefer
-[dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
-for data wrangling and [ggplot2](http://ggplot2.org/) for visualisation.
-
-library(dplyr)\
-library(ggplot2)
-
-Reading in data
-
-Reading in data is straight forward in both R and Python. The code we
-need to read in the file is comparable between R and Python. Zhuyi Xue
-specified "compression = 'gzip'", but this would not have been necessary
-as the default is to infer it from the file suffix.
-
-One big difference in the general syntax we can see here too: Boolean
-true/false values are written in all caps in R (TRUE/FALSE), while
-Python uses first letter capitalisation (True/False). The same prinicple
-applies to "none".
-
-***Python:***
-
-df = pd.read\_csv(\'Homo\_sapiens.GRCh38.85.gff3.gz\',\
-compression = \'gzip\',\
-sep = \'\\t\',\
-comment = \'\#\',\
-low\_memory = False,\
-header = None,\
-names = \[\'seqid\', \'source\', \'type\', \'start\', \'end\',
-\'score\', \'strand\', \'phase\', \'attributes\'\])\
-df.head()
-
-***R:***
-
-df \<-
-read.csv(\"\~/Documents/Github/Homo\_sapiens.GRCh38.85.gff3.gz\",\
-header = FALSE,\
-sep = \"\\t\",\
-col.names = c(\'seqid\', \'source\', \'type\', \'start\', \'end\',
-\'score\', \'strand\', \'phase\', \'attributes\'),\
-comment.char = \"\#\")\
-head(df)
-
-\#\# seqid source type start end score strand phase\
-\#\# 1 1 GRCh38 chromosome 1 248956422 . . .\
-\#\# 2 1 . biological\_region 10469 11240 1.3e+03 . .\
-\#\# 3 1 . biological\_region 10650 10657 0.999 + .\
-\#\# 4 1 . biological\_region 10655 10657 0.999 - .\
-\#\# 5 1 . biological\_region 10678 10687 0.999 + .\
-\#\# 6 1 . biological\_region 10681 10688 0.999 - .\
-\#\# attributes\
-\#\# 1 ID=chromosome:1;Alias=CM000663.2,chr1,NC\_000001.11\
-\#\# 2 external\_name=oe %3D 0.79;logic\_name=cpg\
-\#\# 3 logic\_name=eponine\
-\#\# 4 logic\_name=eponine\
-\#\# 5 logic\_name=eponine\
-\#\# 6 logic\_name=eponine
-
-Examining data
-
--   listing unique strings
-
-The first thing we want to know from the data is how many unique entries
-there are in the "seqid" column.
-
-Here, we can already see the main difference in syntax between R and
-Python:
-
-Python concatenates the object name ("df) with the column name and the
-functions that we want to run on this column in a sequential manner,
-separated by a dot. Base R uses nested functions, where each function is
-called with "function\_name()" and we specify columns with
-"object\_name\$column\_name".
-
-However, both R and Python can also call columns in a dataframe with "\[
-\]" with the difference that Python per default subsets data columns
-df\["seqid"\], while R always needs index specifications for rows and
-columns, separated by ",": e.g. df\[, "seqid"\] would subset every row
-and only the column named "seqid".
-
-The sequential calling of functions is indeed very handy, it makes the
-code easier to read and understand than lots of interwoven functions and
-brackets. But while this isn't the concept of base R, dplyr uses the
-[magrittr](https://www.r-bloggers.com/why-bother-with-magrittr/)
-principle of chaining functions with the pipe symbol "%\>%". Even though
-this symbol isn't as easily typed, it's functionality is often superior
-to base R, especially if you need to run many functions on a dataframe.
-However, with just or two functions, I usually keep to base R as it is
-shorter.
-
-***Python:***
-
-df.seqid.unique() \# alternatively: df\[\'seqid\'\].unique()
-
-*R:*
-
-unique(df\$seqid)
-
-\#\# \[1\] 1 10 11 12 13 14\
-\#\# \[7\] 15 16 17 18 19 2\
-\#\# \[13\] 20 21 22 3 4 5\
-\#\# \[19\] 6 7 8 9 GL000008.2 GL000009.2\
-\#\# \[25\] GL000194.1 GL000195.1 GL000205.2 GL000208.1 GL000213.1
-GL000214.1\
-\#\# \[31\] GL000216.2 GL000218.1 GL000219.1 GL000220.1 GL000221.1
-GL000224.1\
-\#\# \[37\] GL000225.1 GL000226.1 KI270302.1 KI270303.1 KI270304.1
-KI270305.1\
-\#\# \[43\] KI270310.1 KI270311.1 KI270312.1 KI270315.1 KI270316.1
-KI270317.1\
-\#\# \[49\] KI270320.1 KI270322.1 KI270329.1 KI270330.1 KI270333.1
-KI270334.1\
-\#\# \[55\] KI270335.1 KI270336.1 KI270337.1 KI270338.1 KI270340.1
-KI270362.1\
-\#\# \[61\] KI270363.1 KI270364.1 KI270366.1 KI270371.1 KI270372.1
-KI270373.1\
-\#\# \[67\] KI270374.1 KI270375.1 KI270376.1 KI270378.1 KI270379.1
-KI270381.1\
-\#\# \[73\] KI270382.1 KI270383.1 KI270384.1 KI270385.1 KI270386.1
-KI270387.1\
-\#\# \[79\] KI270388.1 KI270389.1 KI270390.1 KI270391.1 KI270392.1
-KI270393.1\
-\#\# \[85\] KI270394.1 KI270395.1 KI270396.1 KI270411.1 KI270412.1
-KI270414.1\
-\#\# \[91\] KI270417.1 KI270418.1 KI270419.1 KI270420.1 KI270422.1
-KI270423.1\
-\#\# \[97\] KI270424.1 KI270425.1 KI270429.1 KI270435.1 KI270438.1
-KI270442.1\
-\#\# \[103\] KI270448.1 KI270465.1 KI270466.1 KI270467.1 KI270468.1
-KI270507.1\
-\#\# \[109\] KI270508.1 KI270509.1 KI270510.1 KI270511.1 KI270512.1
-KI270515.1\
-\#\# \[115\] KI270516.1 KI270517.1 KI270518.1 KI270519.1 KI270521.1
-KI270522.1\
-\#\# \[121\] KI270528.1 KI270529.1 KI270530.1 KI270538.1 KI270539.1
-KI270544.1\
-\#\# \[127\] KI270548.1 KI270579.1 KI270580.1 KI270581.1 KI270582.1
-KI270583.1\
-\#\# \[133\] KI270584.1 KI270587.1 KI270588.1 KI270589.1 KI270590.1
-KI270591.1\
-\#\# \[139\] KI270593.1 KI270706.1 KI270707.1 KI270708.1 KI270709.1
-KI270710.1\
-\#\# \[145\] KI270711.1 KI270712.1 KI270713.1 KI270714.1 KI270715.1
-KI270716.1\
-\#\# \[151\] KI270717.1 KI270718.1 KI270719.1 KI270720.1 KI270721.1
-KI270722.1\
-\#\# \[157\] KI270723.1 KI270724.1 KI270725.1 KI270726.1 KI270727.1
-KI270728.1\
-\#\# \[163\] KI270729.1 KI270730.1 KI270731.1 KI270732.1 KI270733.1
-KI270734.1\
-\#\# \[169\] KI270735.1 KI270736.1 KI270737.1 KI270738.1 KI270739.1
-KI270740.1\
-\#\# \[175\] KI270741.1 KI270742.1 KI270743.1 KI270744.1 KI270745.1
-KI270746.1\
-\#\# \[181\] KI270747.1 KI270748.1 KI270749.1 KI270750.1 KI270751.1
-KI270752.1\
-\#\# \[187\] KI270753.1 KI270754.1 KI270755.1 KI270756.1 KI270757.1 MT\
-\#\# \[193\] X Y\
-\#\# 194 Levels: 1 10 11 12 13 14 15 16 17 18 19 2 20 21 22 3 4 5 6 7 8
-\... Y
-
-\# with dplyr:\
-\# df %\>% select(seqid) %\>% unique
-
--   how many unique seqids are there?
-
-To get the number of unique entries in the "seqid" column, we simply
-need to append ".shape" to the above Python code. In R, we can either
-wrap the above R code with the "length()" function or use dplyr and
-piping instead. If we use the latter, we need to use the "nrow()"
-function because base R returns a vector, while dplyr returns a
-dataframe. Here, we can see that with two functions, using dplyr is
-still a bit more code but it already looks much
-[tidier](https://blog.rstudio.org/2014/07/22/introducing-tidyr/).
-
-*Python:*
-
-df.seqid.unique().shape
-
-*R:*
-
-length(unique(df\$seqid))
-
-\#\# \[1\] 194
-
-\# with dplyr:\
-\# df %\>% select(seqid) %\>% unique %\>% nrow
-
--   counting occurrences
-
-To count the frequencies of each unique entry in the "source" column, we
-use the "value\_counts()" function in Python and the "table()" function
-in R. These two functions differ in how they sort the output table:
-value\_counts() sorts by decreasing frequency, while R alphabetically
-sorts the variables. To order the data as in Python, we need to add the
-"sort()" function to our R code.
-
-*Python:*
-
-df.source.value\_counts()
-
-*R:*
-
-\# table(df\$source) is per default ordered alphabetically, if we want
-it ordered by decreasing counts, like with Python:\
-sort(table(df\$source), decreasing = TRUE)
-
-\#\#\
-\#\# havana ensembl\_havana ensembl . mirbase\
-\#\# 1441093 745065 228212 182510 4701\
-\#\# GRCh38 insdc\
-\#\# 194 74
-
-\# dplyr:\
-\# df %\>% select(source) %\>% table %\>% sort(decreasing = TRUE)
-
- 
-
-How Much of the Genome Is Incomplete?
-
--   subsetting a dataframe
-
-We are now subsetting our original dataframe and assign it a new object
-name with " = " or " \<- ".
-
-To subset the dataframe to keep only rows which say "GRCh38" in the
-"source" column, ther are several ways to do this in R: the way that
-would be directly comparable to how it was done in Python would be to
-also use the square bracket indexing. However, there are two solutions
-which are more elegant: 1) base R's "subset()" or dplyr's "filter()"
-function. But with this short example, there is no big difference
-between the three.
-
-Python's "shape" gives us the same information as R's "dim()" function:
-how many rows and columns our dataframe has.
-
-To preview a random subset of 10 rows from our dataframe, we use
-Python's "sample()" and dplyr's "sample\_n()" function.
-
-*Python:*
-
-gdf = df\[df.source == \'GRCh38\'\]
-
-gdf.shape\
-gdf.sample(10)
-
-*R:*
-
-gdf \<- df\[df\$source == \"GRCh38\", \]
-
-\# alternatively:\
-\# gdf \<- subset(df, source == \"GRCh38\")
-
-\# dplyr:\
-\# gdf \<- df %\>% filter(source == \"GRCh38\")
-
-\# get number of rows and columns\
-dim(gdf)
-
-\#\# \[1\] 194 9
-
-\# randomly sample 10 rows for observation\
-sample\_n(gdf, 10)
-
-\#\# seqid source type start end score strand phase\
-\#\# 2511484 KI270375.1 GRCh38 supercontig 1 2378 . . .\
-\#\# 2511545 KI270466.1 GRCh38 supercontig 1 1233 . . .\
-\#\# 2511473 KI270337.1 GRCh38 supercontig 1 1121 . . .\
-\#\# 2511504 KI270411.1 GRCh38 supercontig 1 2646 . . .\
-\#\# 2511487 KI270379.1 GRCh38 supercontig 1 1045 . . .\
-\#\# 483371 12 GRCh38 chromosome 1 133275309 . . .\
-\#\# 2511494 KI270387.1 GRCh38 supercontig 1 1537 . . .\
-\#\# 674768 14 GRCh38 chromosome 1 107043718 . . .\
-\#\# 2511493 KI270386.1 GRCh38 supercontig 1 1788 . . .\
-\#\# 2511505 KI270412.1 GRCh38 supercontig 1 1179 . . .\
-\#\# attributes\
-\#\# 2511484
-ID=supercontig:KI270375.1;Alias=chrUn\_KI270375v1,NT\_187493.1\
-\#\# 2511545
-ID=supercontig:KI270466.1;Alias=chrUn\_KI270466v1,NT\_187421.1\
-\#\# 2511473
-ID=supercontig:KI270337.1;Alias=chrUn\_KI270337v1,NT\_187466.1\
-\#\# 2511504
-ID=supercontig:KI270411.1;Alias=chrUn\_KI270411v1,NT\_187409.1\
-\#\# 2511487
-ID=supercontig:KI270379.1;Alias=chrUn\_KI270379v1,NT\_187472.1\
-\#\# 483371 ID=chromosome:12;Alias=CM000674.2,chr12,NC\_000012.12\
-\#\# 2511494
-ID=supercontig:KI270387.1;Alias=chrUn\_KI270387v1,NT\_187475.1\
-\#\# 674768 ID=chromosome:14;Alias=CM000676.2,chr14,NC\_000014.9\
-\#\# 2511493
-ID=supercontig:KI270386.1;Alias=chrUn\_KI270386v1,NT\_187480.1\
-\#\# 2511505
-ID=supercontig:KI270412.1;Alias=chrUn\_KI270412v1,NT\_187408.1
-
--   creating new columns and performing calculations
-
-Now we want to create a new column called "length". It should contain
-the gene lengths, i.e. the distance in base pairs between the start and
-end point on the chromosomes ("start" and "end" columns). In R we don't
-need to copy the dataframe first but the rest of the code is very
-similar: we define a new column name for the dataframe and assign its
-value by subtracting the values of the "start" from the values of the
-"end" column (+1). Here, we can see again that in Python we use a dot to
-define columns, while R uses the Dollar sign.
-
-The sum of all lengths is calculated with the "sum()" function in both
-languages.
-
-*Python:*
-
-gdf = gdf.copy()\
-gdf\[\'length\'\] = gdf.end - gdf.start + 1
-
-gdf.length.sum()
-
-*R:*
-
-gdf\$length \<- gdf\$end - gdf\$start + 1
-
-sum(gdf\$length)
-
-\#\# \[1\] 3096629726
-
-Next, we want to calculating the proportion of the genome that is not on
-main chromosome assemblies. For that, we first define a character string
-with the main chromosomes: 1 to 23, X, Y and MT (mitochondrial
-chromosome). Defining this string is a bit easier in R.
-
-We will use this string to calculate the sum of lengths of the subsetted
-dataframe and divide it by the sum of lengths of the whole dataframe.
-For subsetting, we use the "isin()" function of Python, which
-corresponds to R's "%in%".
-
-*Python:*
-
-chrs = \[str(\_) for \_ in range(1, 23)\] + \[\'X\', \'Y\', \'MT\'\]\
-gdf\[-gdf.seqid.isin(chrs)\].length.sum() / gdf.length.sum()
-
-\# or\
-gdf\[(gdf\[\'type\'\] == \'supercontig\')\].length.sum() /
-gdf.length.sum()
-
-*R:*
-
-chrs \<- c(1:23, \"X\", \"Y\", \"MT\")\
-sum(subset(gdf, !seqid %in% chrs)\$length) / sum(gdf\$length)
-
-\#\# \[1\] 0.003702192
-
- 
-
-How Many Genes Are There?
-
-Here, we are again using the same functions as above for subsetting the
-dataframe, asking for its dimensions, printing 10 random lines and
-asking for the frequencies of each unique item in the "type" column. For
-the latter I am using base R over dplyr, because it's faster to type.
-
-*Python:*
-
-edf = df\[df.source.isin(\[\'ensembl\', \'havana\',
-\'ensembl\_havana\'\])\]\
-edf.shape
-
-edf.sample(10)\
-edf.type.value\_counts()
-
-*R:*
-
-edf \<- subset(df, source %in% c(\"ensembl\", \"havana\",
-\"ensembl\_havana\"))\
-dim(edf)
-
-\#\# \[1\] 2414370 9
-
-sample\_n(edf, 10)
-
-\#\# seqid source type start end score\
-\#\# 2548897 X ensembl three\_prime\_UTR 67723842 67730618 .\
-\#\# 790670 15 ensembl\_havana CDS 42352030 42352139 .\
-\#\# 1298369 19 havana CDS 38942683 38942751 .\
-\#\# 189728 1 ensembl\_havana CDS 186304108 186304257 .\
-\#\# 1080599 17 havana exon 44401337 44401453 .\
-\#\# 1562968 20 ensembl\_havana exon 2964272 2964350 .\
-\#\# 1965100 5 ensembl transcript 144087 144197 .\
-\#\# 2581554 X havana exon 147927670 147928807 .\
-\#\# 785399 15 havana exon 40611478 40611511 .\
-\#\# 1417830 2 ensembl\_havana CDS 71520178 71520208 .\
-\#\# strand phase\
-\#\# 2548897 + .\
-\#\# 790670 + 2\
-\#\# 1298369 - 0\
-\#\# 189728 + 2\
-\#\# 1080599 - .\
-\#\# 1562968 + .\
-\#\# 1965100 - .\
-\#\# 2581554 + .\
-\#\# 785399 + .\
-\#\# 1417830 + 0\
-\#\# attributes\
-\#\# 2548897 Parent=transcript:ENST00000612452\
-\#\# 790670
-ID=CDS:ENSP00000326227;Parent=transcript:ENST00000318010;protein\_id=ENSP00000326227\
-\#\# 1298369
-ID=CDS:ENSP00000472465;Parent=transcript:ENST00000599996;protein\_id=ENSP00000472465\
-\#\# 189728
-ID=CDS:ENSP00000356453;Parent=transcript:ENST00000367483;protein\_id=ENSP00000356453\
-\#\# 1080599
-Parent=transcript:ENST00000585614;Name=ENSE00002917300;constitutive=0;ensembl\_end\_phase=2;ensembl\_phase=2;exon\_id=ENSE00002917300;rank=7;version=1\
-\#\# 1562968
-Parent=transcript:ENST00000216877;Name=ENSE00003603687;constitutive=1;ensembl\_end\_phase=1;ensembl\_phase=-1;exon\_id=ENSE00003603687;rank=4;version=1\
-\#\# 1965100
-ID=transcript:ENST00000362670;Parent=gene:ENSG00000199540;Name=Y\_RNA.43-201;biotype=misc\_RNA;tag=basic;transcript\_id=ENST00000362670;transcript\_support\_level=NA;version=1\
-\#\# 2581554
-Parent=transcript:ENST00000620828;Name=ENSE00003724969;constitutive=0;ensembl\_end\_phase=-1;ensembl\_phase=-1;exon\_id=ENSE00003724969;rank=1;version=1\
-\#\# 785399
-Parent=transcript:ENST00000399668;Name=ENSE00003659959;constitutive=0;ensembl\_end\_phase=2;ensembl\_phase=1;exon\_id=ENSE00003659959;rank=7;version=1\
-\#\# 1417830
-ID=CDS:ENSP00000398305;Parent=transcript:ENST00000429174;protein\_id=ENSP00000398305
-
-sort(table(edf\$type), decreasing = TRUE)
-
-\#\#\
-\#\# exon CDS\
-\#\# 1180596 704604\
-\#\# five\_prime\_UTR three\_prime\_UTR\
-\#\# 142387 133938\
-\#\# transcript gene\
-\#\# 96375 42470\
-\#\# processed\_transcript aberrant\_processed\_transcript\
-\#\# 28228 26944\
-\#\# NMD\_transcript\_variant lincRNA\
-\#\# 13761 13247\
-\#\# processed\_pseudogene lincRNA\_gene\
-\#\# 10722 7533\
-\#\# pseudogene RNA\
-\#\# 3049 2221\
-\#\# snRNA snRNA\_gene\
-\#\# 1909 1909\
-\#\# snoRNA snoRNA\_gene\
-\#\# 956 944\
-\#\# pseudogenic\_transcript rRNA\
-\#\# 737 549\
-\#\# rRNA\_gene miRNA\
-\#\# 549 302\
-\#\# V\_gene\_segment J\_gene\_segment\
-\#\# 216 158\
-\#\# VD\_gene\_segment C\_gene\_segment\
-\#\# 37 29\
-\#\# biological\_region chromosome\
-\#\# 0 0\
-\#\# miRNA\_gene mt\_gene\
-\#\# 0 0\
-\#\# supercontig\
-\#\# 0
-
-Now we want to subset the dataframe to rows with the attribute "gene" in
-the "type" column, look at 10 random lines from the "attributes" column
-and get the dataframe dimensions.
-
-*Python:*
-
-ndf = edf\[edf.type == \'gene\'\]\
-ndf = ndf.copy()\
-ndf.sample(10).attributes.values\
-ndf.shape
-
-*R:*
-
-ndf \<- subset(edf, type == \"gene\")\
-sample\_n(ndf, 10)\$attributes
-
-\#\# \[1\]
-ID=gene:ENSG00000170949;Name=ZNF160;biotype=protein\_coding;description=zinc
-finger protein 160 \[Source:HGNC
-Symbol%3BAcc:HGNC:12948\];gene\_id=ENSG00000170949;havana\_gene=OTTHUMG00000182854;havana\_version=3;logic\_name=ensembl\_havana\_gene;version=17\
-\#\# \[2\]
-ID=gene:ENSG00000215088;Name=RPS5P3;biotype=processed\_pseudogene;description=ribosomal
-protein S5 pseudogene 3 \[Source:HGNC
-Symbol%3BAcc:HGNC:10427\];gene\_id=ENSG00000215088;havana\_gene=OTTHUMG00000065532;havana\_version=1;logic\_name=havana;version=3\
-\#\# \[3\]
-ID=gene:ENSG00000249077;Name=RP11-478C1.8;biotype=processed\_pseudogene;gene\_id=ENSG00000249077;havana\_gene=OTTHUMG00000160290;havana\_version=1;logic\_name=havana;version=1\
-\#\# \[4\]
-ID=gene:ENSG00000110619;Name=CARS;biotype=protein\_coding;description=cysteinyl-tRNA
-synthetase \[Source:HGNC
-Symbol%3BAcc:HGNC:1493\];gene\_id=ENSG00000110619;havana\_gene=OTTHUMG00000010927;havana\_version=9;logic\_name=ensembl\_havana\_gene;version=16\
-\#\# \[5\]
-ID=gene:ENSG00000168010;Name=ATG16L2;biotype=protein\_coding;description=autophagy
-related 16 like 2 \[Source:HGNC
-Symbol%3BAcc:HGNC:25464\];gene\_id=ENSG00000168010;havana\_gene=OTTHUMG00000167961;havana\_version=2;logic\_name=ensembl\_havana\_gene;version=10\
-\#\# \[6\]
-ID=gene:ENSG00000055957;Name=ITIH1;biotype=protein\_coding;description=inter-alpha-trypsin
-inhibitor heavy chain 1 \[Source:HGNC
-Symbol%3BAcc:HGNC:6166\];gene\_id=ENSG00000055957;havana\_gene=OTTHUMG00000150312;havana\_version=9;logic\_name=ensembl\_havana\_gene;version=10\
-\#\# \[7\]
-ID=gene:ENSG00000258781;Name=RP11-496I2.4;biotype=unprocessed\_pseudogene;gene\_id=ENSG00000258781;havana\_gene=OTTHUMG00000170502;havana\_version=2;logic\_name=havana;version=2\
-\#\# \[8\]
-ID=gene:ENSG00000157965;Name=SSX8;biotype=unprocessed\_pseudogene;description=SSX
-family member 8 \[Source:HGNC
-Symbol%3BAcc:HGNC:19654\];gene\_id=ENSG00000157965;havana\_gene=OTTHUMG00000021573;havana\_version=4;logic\_name=havana;version=11\
-\#\# \[9\]
-ID=gene:ENSG00000273489;Name=RP11-180C16.1;biotype=antisense;gene\_id=ENSG00000273489;havana\_gene=OTTHUMG00000186336;havana\_version=1;logic\_name=havana;version=1\
-\#\# \[10\]
-ID=gene:ENSG00000279532;Name=CTB-96E2.6;biotype=TEC;gene\_id=ENSG00000279532;havana\_gene=OTTHUMG00000179414;havana\_version=1;logic\_name=havana;version=1\
-\#\# 1623077 Levels: external\_name=Ala;logic\_name=trnascan \...
-
-dim(ndf)
-
-\#\# \[1\] 42470 9
-
--   extracting gene information from attributes field
-
-I don't know if there is an easier way in Python but in R we don't need
-to create big helper functions around it. We can simply use "gsub()"
-with defining the regular expression for what we want to extract. This
-makes the R code much shorter and easier to understand! We then drop the
-original "attributes" column.
-
-To have a look at the dataframe, we use "head()" this time.
-
-*Python:*
-
-import re
-
-RE\_GENE\_NAME = re.compile(r\'Name=(?P\<gene\_name\>.+?);\')\
-def extract\_gene\_name(attributes\_str):\
-res = RE\_GENE\_NAME.search(attributes\_str)\
-return res.group(\'gene\_name\')
-
-ndf\[\'gene\_name\'\] = ndf.attributes.apply(extract\_gene\_name)
-
-RE\_GENE\_ID = re.compile(r\'gene\_id=(?P\<gene\_id\>ENSG.+?);\')\
-def extract\_gene\_id(attributes\_str):\
-res = RE\_GENE\_ID.search(attributes\_str)\
-return res.group(\'gene\_id\')
-
-ndf\[\'gene\_id\'\] = ndf.attributes.apply(extract\_gene\_id)
-
-RE\_DESC = re.compile(\'description=(?P\<desc\>.+?);\')\
-def extract\_description(attributes\_str):\
-res = RE\_DESC.search(attributes\_str)\
-if res is None:\
-return \'\'\
-else:\
-return res.group(\'desc\')
-
-ndf\[\'desc\'\] = ndf.attributes.apply(extract\_description)
-
-ndf.drop(\'attributes\', axis=1, inplace=True)\
-ndf.head()
-
-*R:*
-
-ndf\$gene\_name \<- gsub(\"(.\*Name=)(.\*?)(;biotype.\*)\",
-\"[\\\\2](file:///\\2)\", ndf\$attributes)\
-ndf\$gene\_id \<- gsub(\"(ID=gene:)(.\*?)(;Name.\*)\",
-\"[\\\\2](file:///\\2)\", ndf\$attributes)\
-ndf\$desc \<- gsub(\"(.\*description=)(.\*?)(;.\*)\",
-\"[\\\\2](file:///\\2)\", ndf\$attributes)
-
-\# some genes don\'t have a description\
-ndf\$desc \<- ifelse(grepl(\"\^ID=.\*\", ndf\$desc), \"\", ndf\$desc)
-
-ndf \<- subset(ndf, select = -attributes)\
-head(ndf)
-
-\#\# seqid source type start end score strand phase gene\_name\
-\#\# 17 1 havana gene 11869 14409 . + . DDX11L1\
-\#\# 29 1 havana gene 14404 29570 . - . WASH7P\
-\#\# 72 1 havana gene 52473 53312 . + . OR4G4P\
-\#\# 75 1 havana gene 62948 63887 . + . OR4G11P\
-\#\# 78 1 ensembl\_havana gene 69091 70008 . + . OR4F5\
-\#\# 109 1 havana gene 131025 134836 . + . CICP27\
-\#\# gene\_id\
-\#\# 17 ENSG00000223972\
-\#\# 29 ENSG00000227232\
-\#\# 72 ENSG00000268020\
-\#\# 75 ENSG00000240361\
-\#\# 78 ENSG00000186092\
-\#\# 109 ENSG00000233750\
-\#\# desc\
-\#\# 17 DEAD/H-box helicase 11 like 1 \[Source:HGNC
-Symbol%3BAcc:HGNC:37102\]\
-\#\# 29 WAS protein family homolog 7 pseudogene \[Source:HGNC
-Symbol%3BAcc:HGNC:38034\]\
-\#\# 72 olfactory receptor family 4 subfamily G member 4 pseudogene
-\[Source:HGNC Symbol%3BAcc:HGNC:14822\]\
-\#\# 75 olfactory receptor family 4 subfamily G member 11 pseudogene
-\[Source:HGNC Symbol%3BAcc:HGNC:31276\]\
-\#\# 78 olfactory receptor family 4 subfamily F member 5 \[Source:HGNC
-Symbol%3BAcc:HGNC:14825\]\
-\#\# 109 capicua transcriptional repressor pseudogene 27 \[Source:HGNC
-Symbol%3BAcc:HGNC:48835\]
-
-Next, we want to know how many unique gene names and gene IDs there are.
-As above we use the "unique()", "shape()" (Python) and "length()" (R)
-functions.
-
-The count table for gene names can again be obtained with R's "table()"
-function, even though Zhuyi Xue uses a slightly different approach: he
-first groups the "gene\_name" column, then counts and sorts.
-
-Finally, we can calculate the proportion of genes that have more than
-appear more than once and we can have a closer look at the SCARNA20
-gene.
-
-*Python:*
-
-ndf.shape\
-ndf.gene\_id.unique().shape\
-ndf.gene\_name.unique().shape
-
-count\_df = ndf.groupby(\'gene\_name\').count().ix\[:,
-0\].sort\_values().ix\[::-1\]\
-count\_df.head(10)
-
-count\_df\[count\_df \> 1\].shape\
-count\_df.shape\
-count\_df\[count\_df \> 1\].shape\[0\] / count\_df.shape\[0\]
-
-ndf\[ndf.gene\_name == \'SCARNA20\'\]
-
-*R:*
-
-dim(ndf)
-
-\#\# \[1\] 42470 11
-
-length(unique(ndf\$gene\_id))
-
-\#\# \[1\] 42470
-
-length(unique(ndf\$gene\_name))
-
-\#\# \[1\] 42387
-
-count\_df \<- sort(table(ndf\$gene\_name), decreasing = TRUE)\
-head(count\_df, n = 10)
-
-\#\#\
-\#\# SCARNA20 SCARNA16 SCARNA17 SCARNA11\
-\#\# 7 6 5 4\
-\#\# SCARNA15 SCARNA21 Clostridiales-1 SCARNA4\
-\#\# 4 4 3 3\
-\#\# ACTR3BP2 AGBL1\
-\#\# 2 2
-
-length(count\_df\[count\_df \> 1\])
-
-\#\# \[1\] 63
-
-length(count\_df)
-
-\#\# \[1\] 42387
-
-length(count\_df\[count\_df \> 1\]) / length(count\_df)
-
-\#\# \[1\] 0.001486305
-
-ndf\[ndf\$gene\_name == \"SCARNA20\", \]
-
-\#\# seqid source type start end score strand phase\
-\#\# 179400 1 ensembl gene 171768070 171768175 . + .\
-\#\# 201038 1 ensembl gene 204727991 204728106 . + .\
-\#\# 349204 11 ensembl gene 8555016 8555146 . + .\
-\#\# 718521 14 ensembl gene 63479272 63479413 . + .\
-\#\# 837234 15 ensembl gene 75121536 75121666 . - .\
-\#\# 1039875 17 ensembl gene 28018770 28018907 . + .\
-\#\# 1108216 17 ensembl gene 60231516 60231646 . - .\
-\#\# gene\_name gene\_id\
-\#\# 179400 SCARNA20 ENSG00000253060\
-\#\# 201038 SCARNA20 ENSG00000251861\
-\#\# 349204 SCARNA20 ENSG00000252778\
-\#\# 718521 SCARNA20 ENSG00000252800\
-\#\# 837234 SCARNA20 ENSG00000252722\
-\#\# 1039875 SCARNA20 ENSG00000251818\
-\#\# 1108216 SCARNA20 ENSG00000252577\
-\#\# desc\
-\#\# 179400 Small Cajal body specific RNA 20
-\[Source:RFAM%3BAcc:RF00601\]\
-\#\# 201038 Small Cajal body specific RNA 20
-\[Source:RFAM%3BAcc:RF00601\]\
-\#\# 349204 Small Cajal body specific RNA 20
-\[Source:RFAM%3BAcc:RF00601\]\
-\#\# 718521 Small Cajal body specific RNA 20
-\[Source:RFAM%3BAcc:RF00601\]\
-\#\# 837234 Small Cajal body specific RNA 20
-\[Source:RFAM%3BAcc:RF00601\]\
-\#\# 1039875 Small Cajal body specific RNA 20
-\[Source:RFAM%3BAcc:RF00601\]\
-\#\# 1108216 small Cajal body-specific RNA 20 \[Source:HGNC
-Symbol%3BAcc:HGNC:32578\]
-
-\# dplyr:\
-\# ndf %\>% filter(gene\_name == \"SCARNA20\")
-
- 
-
-How Long Is a Typical Gene?
-
-To calculate gene lengths we use the same code as before. R's summary()
-is not exactly the same as Python's describe() but it's close enough.
-
-*Python:*
-
-ndf\[\'length\'\] = ndf.end - ndf.start + 1\
-ndf.length.describe()
-
-*R:*
-
-ndf\$length \<- ndf\$end - ndf\$start + 1\
-summary(ndf\$length)
-
-\#\# Min. 1st Qu. Median Mean 3rd Qu. Max.\
-\#\# 8 884 5170 35830 30550 2305000
-
-Now we produce the first plot, showing a histogram of gene length. In
-base R you can't really plot a histogram with logarithmic y-axis scales
-(at least not without manually tweaking the hist() output but it isn't
-recommended anyway because 0 will become -Inf). But we can do it easily
-with ggplot2 with "scale\_y\_log10()". The code we need for ggplot2 is a
-bit longer than with matplotlib. We could of course further customize
-our plot but for now, let's keep it simple.
-
-*Python:*
-
-import matplotlib as plt
-
-ndf.length.plot(kind=\'hist\', bins=50, logy=True)\
-plt.show()
-
-*R:*
-
-ndf %\>% ggplot(aes(x = length)) +\
-geom\_histogram(bins = 50, fill = \"blue\") +\
-scale\_y\_log10()
-
-![C:\\Users\\fahaddad\\AppData\\Local\\Temp\\msohtmlclip1\\02\\clip\_image001.png](./ebook-media/media/image113.png){width="7.0in"
-height="5.0in"}
-
-Now, we subset the dataframe to keep only rows where the "length" column
-contains values bigger than 2 million and order it by descending gene
-length. To see the shortest genes, we order the original dataframe and
-view the first 6 rows. Instead of "sort()", we use dplyr's "arrange()"
-function this time (I didn't use it before because it can only be
-applied to dataframes).
-
-*Python:*
-
-ndf\[ndf.length \> 2e6\].sort\_values(\'length\').ix\[::-1\]\
-ndf.sort\_values(\'length\').head()
-
-*R:*
-
-ndf %\>% filter(length \> 2e6) %\>% arrange(desc(length))
-
-\#\# seqid source type start end score strand phase\
-\#\# 1 7 ensembl\_havana gene 146116002 148420998 . + .\
-\#\# 2 9 ensembl\_havana gene 8314246 10612723 . - .\
-\#\# 3 X ensembl\_havana gene 31097677 33339441 . - .\
-\#\# 4 11 ensembl\_havana gene 83455012 85627922 . - .\
-\#\# 5 8 ensembl\_havana gene 2935353 4994972 . - .\
-\#\# 6 20 ensembl\_havana gene 13995369 16053197 . + .\
-\#\# gene\_name gene\_id\
-\#\# 1 CNTNAP2 ENSG00000174469\
-\#\# 2 PTPRD ENSG00000153707\
-\#\# 3 DMD ENSG00000198947\
-\#\# 4 DLG2 ENSG00000150672\
-\#\# 5 CSMD1 ENSG00000183117\
-\#\# 6 MACROD2 ENSG00000172264\
-\#\# desc\
-\#\# 1 contactin associated protein-like 2 \[Source:HGNC
-Symbol%3BAcc:HGNC:13830\]\
-\#\# 2 protein tyrosine phosphatase%2C receptor type D \[Source:HGNC
-Symbol%3BAcc:HGNC:9668\]\
-\#\# 3 dystrophin \[Source:HGNC Symbol%3BAcc:HGNC:2928\]\
-\#\# 4 discs large MAGUK scaffold protein 2 \[Source:HGNC
-Symbol%3BAcc:HGNC:2901\]\
-\#\# 5 CUB and Sushi multiple domains 1 \[Source:HGNC
-Symbol%3BAcc:HGNC:14026\]\
-\#\# 6 MACRO domain containing 2 \[Source:HGNC
-Symbol%3BAcc:HGNC:16126\]\
-\#\# length\
-\#\# 1 2304997\
-\#\# 2 2298478\
-\#\# 3 2241765\
-\#\# 4 2172911\
-\#\# 5 2059620\
-\#\# 6 2057829
-
-head(arrange(ndf, length))
-
-\#\# seqid source type start end score strand phase gene\_name\
-\#\# 1 14 havana gene 22438547 22438554 . + . TRDD1\
-\#\# 2 14 havana gene 22439007 22439015 . + . TRDD2\
-\#\# 3 7 havana gene 142786213 142786224 . + . TRBD1\
-\#\# 4 14 havana gene 22449113 22449125 . + . TRDD3\
-\#\# 5 4 havana gene 10238213 10238235 . - . AC006499.9\
-\#\# 6 3 havana gene 179452395 179452419 . - . RP11-145M9.2\
-\#\# gene\_id\
-\#\# 1 ENSG00000223997\
-\#\# 2 ENSG00000237235\
-\#\# 3 ENSG00000282431\
-\#\# 4 ENSG00000228985\
-\#\# 5 ENSG00000271544\
-\#\# 6 ENSG00000239255\
-\#\# desc\
-\#\# 1 T cell receptor delta diversity 1 \[Source:HGNC
-Symbol%3BAcc:HGNC:12254\]\
-\#\# 2 T cell receptor delta diversity 2 \[Source:HGNC
-Symbol%3BAcc:HGNC:12255\]\
-\#\# 3 T cell receptor beta diversity 1 \[Source:HGNC
-Symbol%3BAcc:HGNC:12158\]\
-\#\# 4 T cell receptor delta diversity 3 \[Source:HGNC
-Symbol%3BAcc:HGNC:12256\]\
-\#\# 5\
-\#\# 6\
-\#\# length\
-\#\# 1 8\
-\#\# 2 9\
-\#\# 3 12\
-\#\# 4 13\
-\#\# 5 23\
-\#\# 6 25
-
- 
-
-Gene Distribution Among Chromosomes
-
-The number of genes per chromosome are counted with the "subset()",
-"table()" and "sort()" functions as described earlier.
-
-*Python:*
-
-ndf = ndf\[ndf.seqid.isin(chrs)\]\
-chr\_gene\_counts = ndf.groupby(\'seqid\').count().ix\[:,
-0\].sort\_values().ix\[::-1\]\
-chr\_gene\_counts
-
-*R:*
-
-ndf\$seqid \<- as.character(ndf\$seqid) \# as factors it will subset the
-dataframe but keep the factor levels\
-ndf \<- subset(ndf, seqid %in% chrs)\
-chr\_gene\_counts \<- sort(table(ndf\$seqid), decreasing = TRUE)\
-chr\_gene\_counts
-
-\#\#\
-\#\# 1 2 11 19 17 3 6 12 7 5 16 X 4 9 8\
-\#\# 3902 2806 2561 2412 2280 2204 2154 2140 2106 2002 1881 1852 1751
-1659 1628\
-\#\# 10 15 14 22 20 13 18 21 Y\
-\#\# 1600 1476 1449 996 965 872 766 541 436
-
-To see all genes that are on mitochondrial chromosome, we subset the
-first dataframe by two conditions. In both, R and Python this is done
-with the ampersand symbol but in R we don't need brackets around the
-individual conditions.
-
-*Python:*
-
-df\[(df.type == \'gene\') & (df.seqid == \'MT\')\]
-
-*R:*
-
-subset(df, type == \"gene\" & seqid == \"MT\")
-
-\#\# seqid source type start end score strand phase\
-\#\# 2514004 MT insdc gene 648 1601 . + .\
-\#\# 2514010 MT insdc gene 1671 3229 . + .\
-\#\# 2514017 MT insdc gene 3307 4262 . + .\
-\#\# 2514030 MT insdc gene 4470 5511 . + .\
-\#\# 2514049 MT insdc gene 5904 7445 . + .\
-\#\# 2514059 MT insdc gene 7586 8269 . + .\
-\#\# 2514066 MT insdc gene 8366 8572 . + .\
-\#\# 2514070 MT insdc gene 8527 9207 . + .\
-\#\# 2514074 MT insdc gene 9207 9990 . + .\
-\#\# 2514081 MT insdc gene 10059 10404 . + .\
-\#\# 2514088 MT insdc gene 10470 10766 . + .\
-\#\# 2514092 MT insdc gene 10760 12137 . + .\
-\#\# 2514105 MT insdc gene 12337 14148 . + .\
-\#\# 2514109 MT insdc gene 14149 14673 . - .\
-\#\# 2514116 MT insdc gene 14747 15887 . + .\
-\#\# attributes\
-\#\# 2514004
-ID=gene:ENSG00000211459;Name=MT-RNR1;biotype=Mt\_rRNA;description=mitochondrially
-encoded 12S RNA \[Source:HGNC
-Symbol%3BAcc:HGNC:7470\];gene\_id=ENSG00000211459;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514010
-ID=gene:ENSG00000210082;Name=MT-RNR2;biotype=Mt\_rRNA;description=mitochondrially
-encoded 16S RNA \[Source:HGNC
-Symbol%3BAcc:HGNC:7471\];gene\_id=ENSG00000210082;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514017
-ID=gene:ENSG00000198888;Name=MT-ND1;biotype=protein\_coding;description=mitochondrially
-encoded NADH:ubiquinone oxidoreductase core subunit 1 \[Source:HGNC
-Symbol%3BAcc:HGNC:7455\];gene\_id=ENSG00000198888;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514030
-ID=gene:ENSG00000198763;Name=MT-ND2;biotype=protein\_coding;description=mitochondrially
-encoded NADH:ubiquinone oxidoreductase core subunit 2 \[Source:HGNC
-Symbol%3BAcc:HGNC:7456\];gene\_id=ENSG00000198763;logic\_name=mt\_genbank\_import;version=3\
-\#\# 2514049
-ID=gene:ENSG00000198804;Name=MT-CO1;biotype=protein\_coding;description=mitochondrially
-encoded cytochrome c oxidase I \[Source:HGNC
-Symbol%3BAcc:HGNC:7419\];gene\_id=ENSG00000198804;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514059
-ID=gene:ENSG00000198712;Name=MT-CO2;biotype=protein\_coding;description=mitochondrially
-encoded cytochrome c oxidase II \[Source:HGNC
-Symbol%3BAcc:HGNC:7421\];gene\_id=ENSG00000198712;logic\_name=mt\_genbank\_import;version=1\
-\#\# 2514066
-ID=gene:ENSG00000228253;Name=MT-ATP8;biotype=protein\_coding;description=mitochondrially
-encoded ATP synthase 8 \[Source:HGNC
-Symbol%3BAcc:HGNC:7415\];gene\_id=ENSG00000228253;logic\_name=mt\_genbank\_import;version=1\
-\#\# 2514070
-ID=gene:ENSG00000198899;Name=MT-ATP6;biotype=protein\_coding;description=mitochondrially
-encoded ATP synthase 6 \[Source:HGNC
-Symbol%3BAcc:HGNC:7414\];gene\_id=ENSG00000198899;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514074
-ID=gene:ENSG00000198938;Name=MT-CO3;biotype=protein\_coding;description=mitochondrially
-encoded cytochrome c oxidase III \[Source:HGNC
-Symbol%3BAcc:HGNC:7422\];gene\_id=ENSG00000198938;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514081
-ID=gene:ENSG00000198840;Name=MT-ND3;biotype=protein\_coding;description=mitochondrially
-encoded NADH:ubiquinone oxidoreductase core subunit 3 \[Source:HGNC
-Symbol%3BAcc:HGNC:7458\];gene\_id=ENSG00000198840;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514088
-ID=gene:ENSG00000212907;Name=MT-ND4L;biotype=protein\_coding;description=mitochondrially
-encoded NADH:ubiquinone oxidoreductase core subunit 4L \[Source:HGNC
-Symbol%3BAcc:HGNC:7460\];gene\_id=ENSG00000212907;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514092
-ID=gene:ENSG00000198886;Name=MT-ND4;biotype=protein\_coding;description=mitochondrially
-encoded NADH:ubiquinone oxidoreductase core subunit 4 \[Source:HGNC
-Symbol%3BAcc:HGNC:7459\];gene\_id=ENSG00000198886;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514105
-ID=gene:ENSG00000198786;Name=MT-ND5;biotype=protein\_coding;description=mitochondrially
-encoded NADH:ubiquinone oxidoreductase core subunit 5 \[Source:HGNC
-Symbol%3BAcc:HGNC:7461\];gene\_id=ENSG00000198786;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514109
-ID=gene:ENSG00000198695;Name=MT-ND6;biotype=protein\_coding;description=mitochondrially
-encoded NADH:ubiquinone oxidoreductase core subunit 6 \[Source:HGNC
-Symbol%3BAcc:HGNC:7462\];gene\_id=ENSG00000198695;logic\_name=mt\_genbank\_import;version=2\
-\#\# 2514116
-ID=gene:ENSG00000198727;Name=MT-CYB;biotype=protein\_coding;description=mitochondrially
-encoded cytochrome b \[Source:HGNC
-Symbol%3BAcc:HGNC:7427\];gene\_id=ENSG00000198727;logic\_name=mt\_genbank\_import;version=2
-
-We can get the chromosome lengths from the dataframe as well. We again
-subset to only the main chromosomes, then drop unwanted columns and
-order by length.
-
-*Python:*
-
-gdf = gdf\[gdf.seqid.isin(chrs)\]\
-gdf.drop(\[\'start\', \'end\', \'score\', \'strand\', \'phase\'
-,\'attributes\'\], axis=1, inplace=True)\
-gdf.sort\_values(\'length\').ix\[::-1\]
-
-*R:*
-
-gdf\$seqid \<- as.character(gdf\$seqid) \# as factors it will subset the
-dataframe but keep the factor levels\
-gdf \<- subset(gdf, as.character(seqid) %in% chrs) %\>%\
-select(-(start:attributes))\
-arrange(gdf, desc(length))
-
-\#\# seqid source type length\
-\#\# 1 1 GRCh38 chromosome 248956422\
-\#\# 2 2 GRCh38 chromosome 242193529\
-\#\# 3 3 GRCh38 chromosome 198295559\
-\#\# 4 4 GRCh38 chromosome 190214555\
-\#\# 5 5 GRCh38 chromosome 181538259\
-\#\# 6 6 GRCh38 chromosome 170805979\
-\#\# 7 7 GRCh38 chromosome 159345973\
-\#\# 8 X GRCh38 chromosome 156040895\
-\#\# 9 8 GRCh38 chromosome 145138636\
-\#\# 10 9 GRCh38 chromosome 138394717\
-\#\# 11 11 GRCh38 chromosome 135086622\
-\#\# 12 10 GRCh38 chromosome 133797422\
-\#\# 13 12 GRCh38 chromosome 133275309\
-\#\# 14 13 GRCh38 chromosome 114364328\
-\#\# 15 14 GRCh38 chromosome 107043718\
-\#\# 16 15 GRCh38 chromosome 101991189\
-\#\# 17 16 GRCh38 chromosome 90338345\
-\#\# 18 17 GRCh38 chromosome 83257441\
-\#\# 19 18 GRCh38 chromosome 80373285\
-\#\# 20 20 GRCh38 chromosome 64444167\
-\#\# 21 19 GRCh38 chromosome 58617616\
-\#\# 22 Y GRCh38 chromosome 54106423\
-\#\# 23 22 GRCh38 chromosome 50818468\
-\#\# 24 21 GRCh38 chromosome 46709983\
-\#\# 25 MT GRCh38 chromosome 16569
-
-Now, we merge the dataframe with the number of genes per chromosome with
-the dataframe of chromosome lengths. Because R's "table()" function
-produces a vector, we need to convert it to a dataframe first and define
-the column names. Then, we use the "merge()" function and point to the
-name of the column we want to merge by.
-
-*Python:*
-
-cdf = chr\_gene\_counts.to\_frame(name=\'gene\_count\').reset\_index()\
-cdf.head(2)
-
-merged = gdf.merge(cdf, on=\'seqid\')
-
-*R:*
-
-cdf \<- as.data.frame(chr\_gene\_counts)\
-colnames(cdf) \<- c(\"seqid\", \"gene\_count\")\
-head(cdf, n = 2)
-
-\#\# seqid gene\_count\
-\#\# 1 1 3902\
-\#\# 2 2 2806
-
-merged \<- merge(gdf, cdf, by = \"seqid\")\
-merged
-
-\#\# seqid source type length gene\_count\
-\#\# 1 1 GRCh38 chromosome 248956422 3902\
-\#\# 2 10 GRCh38 chromosome 133797422 1600\
-\#\# 3 11 GRCh38 chromosome 135086622 2561\
-\#\# 4 12 GRCh38 chromosome 133275309 2140\
-\#\# 5 13 GRCh38 chromosome 114364328 872\
-\#\# 6 14 GRCh38 chromosome 107043718 1449\
-\#\# 7 15 GRCh38 chromosome 101991189 1476\
-\#\# 8 16 GRCh38 chromosome 90338345 1881\
-\#\# 9 17 GRCh38 chromosome 83257441 2280\
-\#\# 10 18 GRCh38 chromosome 80373285 766\
-\#\# 11 19 GRCh38 chromosome 58617616 2412\
-\#\# 12 2 GRCh38 chromosome 242193529 2806\
-\#\# 13 20 GRCh38 chromosome 64444167 965\
-\#\# 14 21 GRCh38 chromosome 46709983 541\
-\#\# 15 22 GRCh38 chromosome 50818468 996\
-\#\# 16 3 GRCh38 chromosome 198295559 2204\
-\#\# 17 4 GRCh38 chromosome 190214555 1751\
-\#\# 18 5 GRCh38 chromosome 181538259 2002\
-\#\# 19 6 GRCh38 chromosome 170805979 2154\
-\#\# 20 7 GRCh38 chromosome 159345973 2106\
-\#\# 21 8 GRCh38 chromosome 145138636 1628\
-\#\# 22 9 GRCh38 chromosome 138394717 1659\
-\#\# 23 X GRCh38 chromosome 156040895 1852\
-\#\# 24 Y GRCh38 chromosome 54106423 436
-
-To calculate the correlation between length and gene count, we subset
-the merged dataframe to those two columns and use the "corr()" (Python)
-or "cor()" (R) function.
-
-*Python:*
-
-merged\[\[\'length\', \'gene\_count\'\]\].corr()
-
-*R:*
-
-cor(merged\[, c(\"length\", \"gene\_count\")\])
-
-\#\# length gene\_count\
-\#\# length 1.0000000 0.7282208\
-\#\# gene\_count 0.7282208 1.0000000
-
-And now we produce the final plot: a line plot of chromosome length by
-number of genes per chromosome. For Python, we again use the matplotlib
-and for R the ggplot2 packages. Because Zhuyi Xue creates a new
-dataframe and tweaks the plot somewhat, our ggplot2 code is simpler and
-tidier here.
-
-*Python:*
-
-ax = merged\[\[\'length\',
-\'gene\_count\'\]\].sort\_values(\'length\').plot(x=\'length\',
-y=\'gene\_count\', style=\'o-\')\
-\# add some margin to both ends of x axis\
-xlim = ax.get\_xlim()\
-margin = xlim\[0\] \* 0.1\
-ax.set\_xlim(\[xlim\[0\] - margin, xlim\[1\] + margin\])\
-\# Label each point on the graph\
-for (s, x, y) in merged\[\[\'seqid\', \'length\',
-\'gene\_count\'\]\].sort\_values(\'length\').values:\
-ax.text(x, y - 100, str(s))
-
-*R:*
-
-merged\[, c(\"seqid\", \"length\", \"gene\_count\")\] %\>%\
-arrange(desc(length)) %\>%\
-ggplot(aes(x = length, y = gene\_count, label = seqid)) +\
-geom\_point(color = \"blue\") +\
-geom\_line(color = \"blue\") +\
-geom\_text()
-
-![C:\\Users\\fahaddad\\AppData\\Local\\Temp\\msohtmlclip1\\02\\clip\_image002.png](./ebook-media/media/image114.png){width="7.0in"
-height="5.0in"}
-
- 
-
- 
-
-\#\# R version 3.3.2 (2016-10-31)\
-\#\# Platform: x86\_64-apple-darwin13.4.0 (64-bit)\
-\#\# Running under: macOS Sierra 10.12.1\
-\#\#\
-\#\# locale:\
-\#\# \[1\]
-en\_US.UTF-8/en\_US.UTF-8/en\_US.UTF-8/C/en\_US.UTF-8/en\_US.UTF-8\
-\#\#\
-\#\# attached base packages:\
-\#\# \[1\] stats graphics grDevices utils datasets methods base\
-\#\#\
-\#\# other attached packages:\
-\#\# \[1\] ggplot2\_2.2.1 dplyr\_0.5.0\
-\#\#\
-\#\# loaded via a namespace (and not attached):\
-\#\# \[1\] Rcpp\_0.12.8 codetools\_0.2-15 digest\_0.6.11 rprojroot\_1.1\
-\#\# \[5\] assertthat\_0.1 plyr\_1.8.4 grid\_3.3.2 R6\_2.2.0\
-\#\# \[9\] gtable\_0.2.0 DBI\_0.5-1 backports\_1.0.4 magrittr\_1.5\
-\#\# \[13\] scales\_0.4.1 evaluate\_0.10 stringi\_1.1.2 lazyeval\_0.2.0\
-\#\# \[17\] rmarkdown\_1.3 labeling\_0.3 tools\_3.3.2 stringr\_1.1.0\
-\#\# \[21\] munsell\_0.4.3 yaml\_2.1.14 colorspace\_1.3-2
-htmltools\_0.3.5\
-\#\# \[25\] knitr\_1.15.1 tibble\_1.2
-
-Appendix E -- Deep Learning Resouces (Python, Java, R) -- CNTK / DL4J
-=====================================================================
+**Great For: **
+
+-   **In-Depth Statistical Analysis.** Given that R was developed by and
+    for statisticians, it's no surprise that R is ideally suited to
+    in-depth statistical analysis, whether you're working with sensor
+    data from an [IOT
+    device](https://www.upwork.com/hiring/development/eye-on-the-iot-an-intro-to-the-internet-of-things/)
+    or elaborate financial models. What's more, it's very well supported
+    by the statistics community through the **CRAN** repository, which
+    contains literally thousands of packages that enable you to perform
+    more elaborate analysis and visualization tasks.
+
+<!-- -->
+
+-   **High-Quality Reporting.** Well-produced images convey more than
+    numbers alone, and R places a great emphasis on easily producing
+    high-quality graphs and charts. On top of that, its basic
+    capabilities can be extended with a number of packages, including
+    **ggplot2**, **ggvis**, **googleVis,** and **rCharts**. The
+    **Shiny** framework also allows you to turn those visuals into
+    interactive web applications.
+
+**Not Great For:**
+
+-   **Performance.** R was designed with data scientists in mind, not
+    computers. As such, R is considerably slower than Python or Java.
+
+-   **Creating large-scale data products.** In these instances, data
+    scientists will often prototype in R and then switch to a more
+    flexible language like Java or Python for actual product
+    development.
+
+<!-- -->
+
+-   **Ease of Learning.** If your background is in math or statistics,
+    R's array-oriented syntax can make implementation relatively
+    straightforward. If you have programming experience, however, this
+    approach is likely to seem counterintuitive.
+
+### JAVA
+
+**Great For: **
+
+-   **Excellent Performance on Large-Scale Systems.** Java's speed makes
+    it best for building large-scale systems. While Python is
+    significantly faster than R, Java provides even greater performance
+    than Python. Speed and scalability are why Twitter, LinkedIn, and
+    Facebook rely on Java as the backbone of their data engineering
+    efforts.
+
+<!-- -->
+
+-   **Faster Development Time.** The **Java Virtual Machine** (JVM) is a
+    great environment for developing custom tools quickly. The
+    programming language **Scala** runs on JVM and is popular with data
+    scientists for its combination of object-oriented and functional
+    programming.
+
+**Not Great For:**
+
+-   **Statistical modeling and visualization.** Between these three
+    languages, Java is definitely the least suited to hardcore analysis.
+    Though packages do exist to add some of these functions, they're
+    neither as advanced nor as well supported as the ones you'll find
+    for Python and R.
+
+### PYTHON
+
+**Great For: **
+
+-   **Workflow Integration.** Python's flexibility makes it a popular
+    choice for developers who need to apply statistical techniques or
+    data analysis in their work, or for data scientists whose tasks need
+    to be integrated with web apps or production environments. If you're
+    looking for a single tool to manage your entire data-related
+    workflow, Python is a great option.
+
+<!-- -->
+
+-   **Machine Learning.** The combination of specialized machine
+    learning libraries (like **scikit-learn**, **PyBrain**, and
+    **TensorFlow**) and general purpose flexibility makes Python
+    uniquely suited to developing sophisticated models and prediction
+    engines that plug directly into the production system.
+
+**Not Great For:**
+
+-   **Highly specialized data tasks.** Though the Python community is
+    catching up, there are still hundreds of R packages that have no
+    Python equivalents. If you're looking for very specific
+    capabilities, you might be better off with R.
+
+Hiring a Data Scientist?
+------------------------
+
+Now that you understand the differences between some of the major
+languages in data science, who do you need to set up and maintain your
+data infrastructure? Data scientists come from a variety of backgrounds.
+Some specialize more in performing statistical analysis, while some are
+more focused on building products that interface directly with
+production systems. Explore [data
+scientists](https://www.upwork.com/hire/data-science-freelancers/) on
+Upwork.
+
+Appendix E -- Deep Learning Resources (Python, Java, R) -- CNTK / DL4J
+======================================================================
 
 Code Examples for Learning / Understanding
 ------------------------------------------
