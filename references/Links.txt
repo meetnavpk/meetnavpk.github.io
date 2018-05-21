@@ -1,5 +1,19 @@
 https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
 
+https://ezdatamunch.com/r-vs-python-data-science/
+
+https://heyitskoushik.wordpress.com/2017/12/25/python-vs-r-technical-data-analysis/
+
+https://elitedatascience.com/r-vs-python-for-data-science
+
+https://dzone.com/articles/r-or-python-data-scientists-delight
+
+https://shiring.github.io/r_vs_python/2017/01/22/R_vs_Py_post
+
+https://www.datasciencegraduateprograms.com/the-data-science-process/
+
+https://www.springboard.com/blog/data-science-process/
+
 https://deeplearning4j.org/
 
 https://cdv.dei.uc.pt/denser/
