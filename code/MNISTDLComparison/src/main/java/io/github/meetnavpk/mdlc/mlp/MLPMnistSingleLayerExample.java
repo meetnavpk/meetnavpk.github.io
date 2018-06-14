@@ -41,7 +41,7 @@ import org.slf4j.LoggerFactory;
  */
 public class MLPMnistSingleLayerExample {
 
-    private static Logger log = LoggerFactory.getLogger(MLPMnistSingleLayerExample.class);
+    private static Logger LOG = LoggerFactory.getLogger(MLPMnistSingleLayerExample.class);
 
     public static void main(String[] args) throws Exception {
         //number of rows and columns in the input pictures
@@ -56,7 +56,7 @@ public class MLPMnistSingleLayerExample {
         DataSetIterator mnistTrain = new MnistDataSetIterator(batchSize, true, rngSeed);
         DataSetIterator mnistTest = new MnistDataSetIterator(batchSize, false, rngSeed);
 
-        log.info("Build model....");
+        LOG.info("Build model....");
         MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
                 .seed(rngSeed) //include a random seed for reproducibility
                 // use stochastic gradient descent as an optimization algorithm
@@ -83,12 +83,12 @@ public class MLPMnistSingleLayerExample {
         //print the score with every 1 iteration
         model.setListeners(new ScoreIterationListener(1));
 
-        log.info("Train model....");
+        LOG.info("Train model....");
         for (int i = 0; i < numEpochs; i++) {
             model.fit(mnistTrain);
         }
 
-        log.info("Evaluate model....");
+        LOG.info("Evaluate model....");
         Evaluation eval = new Evaluation(outputNum); //create an evaluation object with 10 possible classes
         while (mnistTest.hasNext()) {
             DataSet next = mnistTest.next();
@@ -96,8 +96,8 @@ public class MLPMnistSingleLayerExample {
             eval.eval(next.getLabels(), output); //check the prediction against the true class
         }
 
-        log.info(eval.stats());
-        log.info("****************Example finished********************");
+        LOG.info(eval.stats());
+        LOG.info("****************Example finished********************");
 
     }
 

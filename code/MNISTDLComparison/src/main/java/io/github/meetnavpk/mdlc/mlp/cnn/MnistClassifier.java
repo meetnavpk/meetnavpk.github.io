@@ -39,15 +39,12 @@ import org.slf4j.LoggerFactory;
  * example will download 15 Mb of data on the first run. Supervised learning
  * best modeled by CNN.
  *
- * @author hanlon
- * @author agibsonccc
- * @author fvaleri
  */
 public class MnistClassifier {
 
-    private static final Logger log = LoggerFactory.getLogger(MnistClassifier.class);
-    private static final String basePath = System.getProperty("java.io.tmpdir") + "/mnist";
-    private static final String dataUrl = "http://github.com/myleott/mnist_png/raw/master/mnist_png.tar.gz";
+    private static final Logger LOG = LoggerFactory.getLogger(MnistClassifier.class);
+    private static final String BASE_PATH = System.getProperty("java.io.tmpdir") + "/mnist";
+    private static final String DATA_URL = "http://github.com/myleott/mnist_png/raw/master/mnist_png.tar.gz";
 
     public static void main(String[] args) throws Exception {
         int height = 28;
@@ -56,22 +53,22 @@ public class MnistClassifier {
         int outputNum = 10; // 10 digits classification
         int batchSize = 54;
         int nEpochs = 1;
-        int iterations = 1;
+//        int iterations = 1;
 
         int seed = 1234;
         Random randNumGen = new Random(seed);
 
-        log.info("Data load and vectorization...");
-        String localFilePath = basePath + "/mnist_png.tar.gz";
-        if (DataUtilities.downloadFile(dataUrl, localFilePath)) {
-            log.debug("Data downloaded from {}", dataUrl);
+        LOG.info("Data load and vectorization...");
+        String localFilePath = BASE_PATH + "/mnist_png.tar.gz";
+        if (DataUtilities.downloadFile(DATA_URL, localFilePath)) {
+            LOG.debug("Data downloaded from {}", DATA_URL);
         }
-        if (!new File(basePath + "/mnist_png").exists()) {
-            DataUtilities.extractTarGz(localFilePath, basePath);
+        if (!new File(BASE_PATH + "/mnist_png").exists()) {
+            DataUtilities.extractTarGz(localFilePath, BASE_PATH);
         }
 
         // vectorization of train data
-        File trainData = new File(basePath + "/mnist_png/training");
+        File trainData = new File(BASE_PATH + "/mnist_png/training");
         FileSplit trainSplit = new FileSplit(trainData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
         ParentPathLabelGenerator labelMaker = new ParentPathLabelGenerator(); // parent path as the image label
         ImageRecordReader trainRR = new ImageRecordReader(height, width, channels, labelMaker);
@@ -84,14 +81,14 @@ public class MnistClassifier {
         trainIter.setPreProcessor(scaler);
 
         // vectorization of test data
-        File testData = new File(basePath + "/mnist_png/testing");
+        File testData = new File(BASE_PATH + "/mnist_png/testing");
         FileSplit testSplit = new FileSplit(testData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
         ImageRecordReader testRR = new ImageRecordReader(height, width, channels, labelMaker);
         testRR.initialize(testSplit);
         DataSetIterator testIter = new RecordReaderDataSetIterator(testRR, batchSize, 1, outputNum);
         testIter.setPreProcessor(scaler); // same normalization for better results
 
-        log.info("Network configuration and training...");
+        LOG.info("Network configuration and training...");
         Map<Integer, Double> lrSchedule = new HashMap<>();
         lrSchedule.put(0, 0.06); // iteration #, learning rate
         lrSchedule.put(200, 0.05);
@@ -136,19 +133,19 @@ public class MnistClassifier {
         MultiLayerNetwork net = new MultiLayerNetwork(conf);
         net.init();
         net.setListeners(new ScoreIterationListener(10));
-        log.debug("Total num of params: {}", net.numParams());
+        LOG.debug("Total num of params: {}", net.numParams());
 
         // evaluation while training (the score should go down)
         for (int i = 0; i < nEpochs; i++) {
             net.fit(trainIter);
-            log.info("Completed epoch {}", i);
+            LOG.info("Completed epoch {}", i);
             Evaluation eval = net.evaluate(testIter);
-            log.info(eval.stats());
+            LOG.info(eval.stats());
             trainIter.reset();
             testIter.reset();
         }
 
-        ModelSerializer.writeModel(net, new File(basePath + "/minist-model.zip"), true);
+        ModelSerializer.writeModel(net, new File(BASE_PATH + "/minist-model.zip"), true);
     }
 
 }

@@ -33,19 +33,17 @@ import javafx.stage.Stage;
  * Test UI for MNIST classifier. Run the MnistClassifier first to build the
  * model.
  *
- * @author jesuino
- * @author fvaleri
  */
 @SuppressWarnings("restriction")
 public class MnistClassifierUI extends Application {
 
-    private static final String basePath = System.getProperty("java.io.tmpdir") + "/mnist";
+    private static final String BASE_PATH = System.getProperty("java.io.tmpdir") + "/mnist";
     private final int canvasWidth = 150;
     private final int canvasHeight = 150;
     private MultiLayerNetwork net; // trained model
 
     public MnistClassifierUI() throws IOException {
-        File model = new File(basePath + "/minist-model.zip");
+        File model = new File(BASE_PATH + "/minist-model.zip");
         if (!model.exists()) {
             throw new IOException("Can't find the model");
         }

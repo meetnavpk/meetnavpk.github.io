@@ -48,7 +48,7 @@ import org.slf4j.LoggerFactory;
  */
 public class MLPMnistTwoLayerExample {
 
-    private static Logger log = LoggerFactory.getLogger(MLPMnistTwoLayerExample.class);
+    private static Logger LOG = LoggerFactory.getLogger(MLPMnistTwoLayerExample.class);
 
     public static void main(String[] args) throws Exception {
         //number of rows and columns in the input pictures
@@ -64,7 +64,7 @@ public class MLPMnistTwoLayerExample {
         DataSetIterator mnistTrain = new MnistDataSetIterator(batchSize, true, rngSeed);
         DataSetIterator mnistTest = new MnistDataSetIterator(batchSize, false, rngSeed);
 
-        log.info("Build model....");
+        LOG.info("Build model....");
         MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
                 .seed(rngSeed) //include a random seed for reproducibility
                 .activation(Activation.RELU)
@@ -92,13 +92,13 @@ public class MLPMnistTwoLayerExample {
         model.init();
         model.setListeners(new ScoreIterationListener(5));  //print the score with every iteration
 
-        log.info("Train model....");
+        LOG.info("Train model....");
         for (int i = 0; i < numEpochs; i++) {
-            log.info("Epoch " + i);
+            LOG.info("Epoch " + i);
             model.fit(mnistTrain);
         }
 
-        log.info("Evaluate model....");
+        LOG.info("Evaluate model....");
         Evaluation eval = new Evaluation(outputNum); //create an evaluation object with 10 possible classes
         while (mnistTest.hasNext()) {
             DataSet next = mnistTest.next();
@@ -106,8 +106,8 @@ public class MLPMnistTwoLayerExample {
             eval.eval(next.getLabels(), output); //check the prediction against the true class
         }
 
-        log.info(eval.stats());
-        log.info("****************Example finished********************");
+        LOG.info(eval.stats());
+        LOG.info("****************Example finished********************");
 
     }
 
