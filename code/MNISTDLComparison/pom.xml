@@ -11,13 +11,15 @@
     <artifactId>MNISTDLComparison</artifactId>
     <packaging>jar</packaging>
     
+    <name>DL Algo Comp / Optim</name>
+    <description>MNist Data Set Algoritm Accuracy Comparison</description>
+    
     <properties>
-        <!-- Change the nd4j.backend property to nd4j-cuda-8.0-platform, nd4j-cuda-9.0-platform or nd4j-cuda-9.1-platform to use CUDA GPUs -->
+        <!-- Change the nd4j.backend property to nd4j-cuda-8.0-platform, nd4j-cuda-9.0-platform or          nd4j-cuda-9.1-platform to use CUDA GPUs -->
         <nd4j.backend>nd4j-native-platform</nd4j.backend>
         <!--<nd4j.backend>nd4j-cuda-9.1-platform</nd4j.backend>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <shadedClassifier>bin</shadedClassifier>
-
 
         <java.version>1.8</java.version>
         <nd4j.version>1.0.0-beta</nd4j.version>
@@ -33,9 +35,9 @@
         <!-- Scala binary version: DL4J's Spark and UI functionality are released with both Scala 2.10 and 2.11 support -->
         <scala.binary.version>2.11</scala.binary.version>
 
-        <hadoop.version>2.2.0</hadoop.version>  <!-- Hadoop version used by Spark 1.6.3 and 2.2.1 (and likely others) -->
+        <hadoop.version>3.0.3</hadoop.version>  <!-- Hadoop version used by Spark 1.6.3 and 2.2.1 (and likely others) -->
         <guava.version>19.0</guava.version>
-        <logback.version>1.1.7</logback.version>
+        <logback.version>1.2.3</logback.version>
         <jfreechart.version>1.0.13</jfreechart.version>
         <jcommon.version>1.0.23</jcommon.version>
         <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>

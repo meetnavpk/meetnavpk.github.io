@@ -1,5 +1,6 @@
 package io.github.meetnavpk.mdlc.mlp;
 
+import io.github.meetnavpk.mdlc.utilities.MnistDownloader;
 import org.deeplearning4j.datasets.iterator.impl.MnistDataSetIterator;
 import org.deeplearning4j.eval.Evaluation;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
@@ -61,6 +62,7 @@ public class MLPMnistTwoLayerExample {
         double rate = 0.0015; // learning rate
 
         //Get the DataSetIterators:
+        MnistDownloader.download(); //Workaround for download location change since 0.9.1 release
         DataSetIterator mnistTrain = new MnistDataSetIterator(batchSize, true, rngSeed);
         DataSetIterator mnistTest = new MnistDataSetIterator(batchSize, false, rngSeed);
 

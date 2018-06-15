@@ -1,5 +1,6 @@
 package io.github.meetnavpk.mdlc.mlp;
 
+import io.github.meetnavpk.mdlc.utilities.MnistDownloader;
 import org.deeplearning4j.datasets.iterator.impl.MnistDataSetIterator;
 import org.deeplearning4j.eval.Evaluation;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
@@ -53,6 +54,7 @@ public class MLPMnistSingleLayerExample {
         int numEpochs = 15; // number of epochs to perform
 
         //Get the DataSetIterators:
+        MnistDownloader.download(); //Workaround for download location change since 0.9.1 release
         DataSetIterator mnistTrain = new MnistDataSetIterator(batchSize, true, rngSeed);
         DataSetIterator mnistTest = new MnistDataSetIterator(batchSize, false, rngSeed);
 
